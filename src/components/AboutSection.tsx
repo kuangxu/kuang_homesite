@@ -20,7 +20,7 @@ const AboutSection = () => {
             </p>
             <p className="text-sm md:text-body text-muted-foreground">
               We started Tikka because our families struggle with diabetes, and we see firsthand 
-              how a glucose-conscious diet often taste awful and managing it can be such a pain. We decided to take this into our own hands. 
+              how a glucose-conscious diet often tastes awful and managing it can be such a pain. We decided to take this into our own hands. 
               With our combined expertise as Professors, computer scientists and data scientists, we believe we can 
               build a rigorous, transparent and powerful system to help millions struggling with diabetes, or who 
               simply want to live healthier lives, find delicious nutritious foods that are also glucose-friendly.
