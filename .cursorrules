@@ -1,0 +1,36 @@
+# Cursor Rules for Tikka Engine Homesite
+
+## Code Style & Documentation
+- Keep documentation minimal and focused on business logic
+- Prefer self-documenting code over extensive comments
+- Only add JSDoc for complex functions or public APIs
+- Use descriptive variable/function names instead of comments
+
+## Agent Behavior
+- **ALWAYS ask for confirmation before making file changes**
+- **ALWAYS ask for confirmation before running terminal commands**
+- **ALWAYS ask for confirmation before installing new dependencies**
+- Prefer to show proposed changes first, then ask for approval
+- When suggesting edits, explain the reasoning briefly
+
+## Project-Specific Guidelines
+- Maintain minimalist design aesthetic
+- Use existing CSS variables and Tailwind classes
+- Follow the established component structure
+- Keep components focused and single-purpose
+- Prefer composition over inheritance
+
+## File Organization
+- Keep components in `src/components/`
+- Use `src/pages/` for page-level components
+- Maintain existing naming conventions
+- Group related components together
+
+## Styling
+- Use the established design system in `src/index.css`
+- Leverage existing typography classes (.text-display, .text-body, etc.)
+- Use CSS variables for colors and spacing
+- Maintain consistent spacing with section-padding and section-spacing classes
+- **When adjusting fonts, ALWAYS check the design system first and use predefined typography classes**
+- **Avoid ad-hoc font styles at all times**
+- **If a needed font style is unavailable, ask to create a new typography class in the design system**

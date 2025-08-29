@@ -28,9 +28,9 @@ const Navigation = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="btn-clean text-display text-lg tracking-wider"
+            className="btn-clean text-display text-xl tracking-wider"
           >
-            TIKKA
+            TIKKA Engine
           </button>
 
           {/* Navigation Links */}

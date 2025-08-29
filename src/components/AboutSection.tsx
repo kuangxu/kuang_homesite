@@ -4,48 +4,31 @@ const AboutSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-heading mb-6">About Us</h2>
-          <div className="divider mb-8 max-w-xs mx-auto"></div>
         </div>
         
         <div className="space-y-12">
-          <div className="text-center max-w-2xl mx-auto">
-            <p className="text-body text-muted-foreground mb-8">
-              At Tikka, we believe that the future of health lies in the intersection of cutting-edge 
-              technology and deeply personal care. Our team of world-class engineers, data scientists, 
-              and health experts is dedicated to transforming how people understand and manage their 
-              nutritional health.
+          <div className="max-w-4xl mx-auto space-y-8 md:space-y-12 text-left">
+            <div className="flex justify-center mb-8 md:mb-12">
+              <img 
+                src="/assets/tikkateam.jpg" 
+                alt="Qin and Kuang, co-founders of Tikka" 
+                className="w-96 h-96 md:w-[500px] md:h-[500px] object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <p className="text-sm md:text-body text-muted-foreground">
+              Hey everyone! We are Qin and Kuang, co-founders of Tikka.
             </p>
-            <p className="text-body text-muted-foreground">
-              Founded with the vision of making personalized nutrition accessible to everyone, we're 
-              building the tools and technologies that will empower millions to make informed decisions 
-              about their health, one meal at a time.
+            <p className="text-sm md:text-body text-muted-foreground">
+              We started Tikka because our families struggle with diabetes, and we see firsthand 
+              how a glucose-conscious diet often taste awful and managing it can be such a pain. We decided to take this into our own hands. 
+              With our combined expertise as Professors, computer scientists and data scientists, we believe we can 
+              build a rigorous, transparent and powerful system to help millions struggling with diabetes, or who 
+              simply want to live healthier lives, find delicious nutritious foods that are also glucose-friendly.
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-12 mt-16">
-            <div className="text-center space-y-4">
-              <h3 className="text-subheading text-foreground">Mission</h3>
-              <p className="text-small text-muted-foreground">
-                To democratize personalized nutrition through intelligent technology that anticipates 
-                and responds to individual health needs.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <h3 className="text-subheading text-foreground">Vision</h3>
-              <p className="text-small text-muted-foreground">
-                A world where everyone has access to nutrition recommendations as unique as their DNA, 
-                lifestyle, and health goals.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <h3 className="text-subheading text-foreground">Values</h3>
-              <p className="text-small text-muted-foreground">
-                Privacy-first design, scientific rigor, and unwavering commitment to improving 
-                human health through technology.
-              </p>
-            </div>
+            <p className="text-sm md:text-body text-muted-foreground">
+              At Tikka, we believe that the future journey of health lies in combining cutting-edge 
+              technology, rigorous mathematics and deeply personal care. Join us!
+            </p>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const EngineSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-heading mb-6">Tikka Engine</h2>
-          <div className="divider mb-8 max-w-xs mx-auto"></div>
+
           <p className="text-body text-muted-foreground max-w-3xl mx-auto">
             Transparent Glucose & Nutrition scores for any food. Make healthier choices for your family, 
             backed by open-source science you can trust.
@@ -57,35 +57,6 @@ const EngineSection = () => {
                 the cycle of processed snacking. Makes nutrition science accessible and actionable for real life.
               </p>
             </div>
-          </div>
-        </div>
-        
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="space-y-3 text-center">
-            <h4 className="text-small font-medium text-foreground uppercase tracking-wider">
-              Open-Source Science
-            </h4>
-            <p className="text-small text-muted-foreground">
-              All algorithms are peer-reviewed and publicly verifiable. No black box, no corporate bias—just honest science.
-            </p>
-          </div>
-          
-          <div className="space-y-3 text-center">
-            <h4 className="text-small font-medium text-foreground uppercase tracking-wider">
-              Instant Photo Analysis
-            </h4>
-            <p className="text-small text-muted-foreground">
-              Snap a photo of any food and get immediate glucose and nutrition scores with healthy alternatives.
-            </p>
-          </div>
-          
-          <div className="space-y-3 text-center">
-            <h4 className="text-small font-medium text-foreground uppercase tracking-wider">
-              Privacy First
-            </h4>
-            <p className="text-small text-muted-foreground">
-              All health data stays secure on your device. We never share personal information with third parties.
-            </p>
           </div>
         </div>
       </div>

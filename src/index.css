@@ -1,9 +1,9 @@
+/* Tikka Engine - Minimalist Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Tikka Engine - Minimalist Design System */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -50,7 +50,7 @@
     --text-2xl: 1.75rem;
     --text-3xl: 2.25rem;
     --text-4xl: 2.75rem;
-    --text-5xl: 3.5rem;
+    --text-5xl: 4.5rem;
     
     /* Transitions */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,7 @@
   /* Typography classes */
   .text-display {
     font-size: var(--text-5xl);
-    font-weight: 300;
+    font-weight: 350;
     line-height: 1.2;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -117,7 +117,7 @@
   .text-body {
     font-size: var(--text-base);
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.7;
   }
   
   .text-small {
@@ -147,6 +147,10 @@
   
   .section-spacing {
     @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .hero-height {
+    @apply min-h-[85vh];
   }
   
   /* Animations */
