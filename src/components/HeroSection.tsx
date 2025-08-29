@@ -6,16 +6,16 @@ const HeroSection = () => {
           T I K K A
         </h1>
         <div className="max-w-4xl mx-auto space-y-8 md:space-y-12 text-left">
-          <p className="text-sm md:text-body text-muted-foreground">
+          <p className="text-body text-muted-foreground">
             Imagine a world where we anticipate your body's needs before you even feel them, where 
             cutting-edge AI and machine learning come together to help you find a delicious and nutrious meal that 
             also keeps blood glucose in check.
           </p>
-          <p className="text-sm md:text-body text-muted-foreground">
+          <p className="text-body text-muted-foreground">
             That's the future we're building at Tikka to empower millions to live healthier, more vibrant 
             lives. 
           </p>
-          <p className="text-sm md:text-body text-muted-foreground">
+          <p className="text-body text-muted-foreground">
           And we're just getting started.
           </p>
 
