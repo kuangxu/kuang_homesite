@@ -1,4 +1,20 @@
+import { trackExternalLink, trackSocialInteraction } from '@/lib/analytics';
+
 const ContactSection = () => {
+  const handleEmailClick = () => {
+    trackExternalLink('mailto:inquiry@tikkahealth.com', 'Contact Email');
+  };
+
+  const handleLinkedInClick = () => {
+    trackExternalLink('https://www.linkedin.com/company/tikka-engine', 'LinkedIn Profile');
+    trackSocialInteraction('linkedin', 'click', 'company_profile');
+  };
+
+  const handleTwitterClick = () => {
+    trackExternalLink('https://x.com/tikkaengine', 'X (Twitter) Profile');
+    trackSocialInteraction('twitter', 'click', 'company_profile');
+  };
+
   return (
     <section id="contact" className="section-spacing section-padding">
       <div className="max-w-2xl mx-auto text-center">
@@ -17,6 +33,7 @@ const ContactSection = () => {
               </p>
               <a 
                 href="mailto:inquiry@tikkahealth.com" 
+                onClick={handleEmailClick}
                 className="text-body text-foreground hover:text-muted-foreground transition-colors duration-300"
               >
                 support@tikkahealth.com
@@ -32,6 +49,7 @@ const ContactSection = () => {
                   href="https://www.linkedin.com/company/tikka-engine" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={handleLinkedInClick}
                   className="text-foreground hover:text-muted-foreground transition-colors duration-300"
                   aria-label="Follow us on LinkedIn"
                 >
@@ -43,6 +61,7 @@ const ContactSection = () => {
                   href="https://x.com/tikkaengine" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={handleTwitterClick}
                   className="text-foreground hover:text-muted-foreground transition-colors duration-300"
                   aria-label="Follow us on X (Twitter)"
                 >

@@ -1,8 +1,20 @@
+import { trackButtonClick, trackExternalLink } from '@/lib/analytics';
+
 const HeroSection = () => {
+  const handleAppStoreClick = () => {
+    trackButtonClick('app_store_download', '/');
+    trackExternalLink('https://apps.apple.com/us/app/tikka-engine-eat-thrive/id6748516283', 'App Store Download');
+  };
+
+  const handleGooglePlayClick = () => {
+    trackButtonClick('google_play_download', '/');
+    trackExternalLink('https://play.google.com/store/apps/details?id=com.tikkahealth.tikka&hl=en_US', 'Google Play Download');
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center section-padding">
       <div className="text-center max-w-4xl mx-auto fade-in">
-        <h1 className="text-4xl md:text-display mb-8 md:mb-12 lg:mb-16">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl mb-8 md:mb-12 lg:mb-16 font-light tracking-widest uppercase">
           T I K K A
         </h1>
         <div className="max-w-4xl mx-auto space-y-8 md:space-y-12 text-left">
@@ -29,6 +41,7 @@ const HeroSection = () => {
                 href="https://apps.apple.com/us/app/tikka-engine-eat-thrive/id6748516283" 
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleAppStoreClick}
                 className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
                 style={{ borderRadius: '5px' }}
                 aria-label="Download on App Store"
@@ -46,6 +59,7 @@ const HeroSection = () => {
                 href="https://play.google.com/store/apps/details?id=com.tikkahealth.tikka&hl=en_US" 
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleGooglePlayClick}
                 className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
                 style={{ borderRadius: '5px' }}
                 aria-label="Get it on Google Play"
