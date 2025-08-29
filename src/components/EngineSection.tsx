@@ -55,7 +55,34 @@ const EngineSection = () => {
           </p>
         </div>
 
-       
+        {/* Screenshots Carousel */}
+        <div className="relative max-w-4xl mx-auto mb-20">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {shuffledScreenshots.map((screenshot, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="overflow-hidden rounded-2xl shadow-lg">
+                      <img
+                        src={screenshot.src}
+                        alt={screenshot.alt}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
          
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
           <div className="space-y-8">
@@ -106,34 +133,6 @@ const EngineSection = () => {
           </div>
         </div>
       </div>
-        {/* Screenshots Carousel */}
-        <div className="relative max-w-4xl mx-auto mb-20">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {shuffledScreenshots.map((screenshot, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-2">
-                    <div className="overflow-hidden rounded-2xl shadow-lg">
-                      <img
-                        src={screenshot.src}
-                        alt={screenshot.alt}
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
-          </Carousel>
-        </div>
     </section>
   );
 };
