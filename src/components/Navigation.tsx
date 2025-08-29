@@ -28,7 +28,7 @@ const Navigation = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="btn-clean text-display text-xl tracking-wider"
+            className="btn-clean text-display text-2xl tracking-wider"
           >
             TIKKA Engine
           </button>
@@ -37,19 +37,19 @@ const Navigation = () => {
           <div className="hidden md:flex space-x-12">
             <button 
               onClick={() => scrollToSection('engine')}
-              className="nav-link"
+              className="nav-link text-lg"
             >
               Tikka Engine
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="nav-link"
+              className="nav-link text-lg"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="nav-link"
+              className="nav-link text-lg"
             >
               Contact
             </button>
