@@ -8,7 +8,7 @@ import ContactSection from '../components/ContactSection';
 const Index = () => {
   useEffect(() => {
     // Set page title and meta description for SEO
-    document.title = 'Tikka Engine - AI-Powered Personalized Nutrition';
+    document.title = 'TIKKA Engine - Eat & Thrive!';
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -19,7 +19,7 @@ const Index = () => {
     // Update Open Graph data
     let ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
-      ogTitle.setAttribute('content', 'Tikka Engine - AI-Powered Personalized Nutrition');
+      ogTitle.setAttribute('content', 'TIKKA Engine - Eat & Thrive!');
     }
     
     let ogDescription = document.querySelector('meta[property="og:description"]');
