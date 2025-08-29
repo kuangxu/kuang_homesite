@@ -129,63 +129,65 @@ const Navigation = () => {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] md:hidden">
-          {/* Backdrop */}
-          <div 
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          
-          {/* Menu Content */}
-          <div className="absolute top-0 right-0 h-full w-80 max-w-[80vw] bg-white mobile-menu">
-            <div className="flex flex-col h-full">
-              {/* Menu Header */}
-              <div className="flex justify-between items-center p-6">
-                <span className="text-display text-xl text-black">Menu</span>
-                <button 
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="btn-clean p-2"
-                  aria-label="Close menu"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </button>
-              </div>
+      <div className={`fixed inset-0 z-[100] md:hidden transition-opacity duration-300 ${
+        isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+      }`}>
+        {/* Backdrop */}
+        <div 
+          className="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+        
+        {/* Menu Content */}
+        <div className={`absolute top-0 right-0 h-full w-80 max-w-[80vw] bg-white mobile-menu transform transition-transform duration-300 ease-out ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+          <div className="flex flex-col h-full">
+            {/* Menu Header */}
+            <div className="flex justify-between items-center p-6">
+              <span className="text-display text-xl text-black">Menu</span>
+              <button 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="btn-clean p-2"
+                aria-label="Close menu"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </button>
+            </div>
 
-              {/* Menu Items */}
-              <div className="flex-1 flex flex-col p-6 space-y-6">
-                <button 
-                  onClick={() => scrollToSection('engine')}
-                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
-                >
-                  Tikka Engine
-                </button>
-                <button 
-                  onClick={() => scrollToSection('about')}
-                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
-                >
-                  About Us
-                </button>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
-                >
-                  Contact
-                </button>
-              </div>
+            {/* Menu Items */}
+            <div className="flex-1 flex flex-col p-6 space-y-6">
+              <button 
+                onClick={() => scrollToSection('engine')}
+                className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+              >
+                Tikka Engine
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+              >
+                About Us
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+              >
+                Contact
+              </button>
+            </div>
 
-              {/* Menu Footer */}
-              <div className="p-6">
-                <div className="text-sm text-gray-500">
-                  © 2025 Tikka Engine
-                </div>
+            {/* Menu Footer */}
+            <div className="p-6">
+              <div className="text-sm text-gray-500">
+                © 2025 Tikka Engine
               </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 };
