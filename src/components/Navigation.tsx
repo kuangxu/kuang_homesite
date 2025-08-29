@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,60 +13,180 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when clicking outside or on a link
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest('.mobile-menu') && !target.closest('.mobile-menu-button')) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+      // Prevent body scroll when menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // Close mobile menu after clicking a link
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/80 backdrop-blur-md' : 'bg-transparent'
-    }`}>
-      <div className="section-padding">
-        <div className="flex justify-between items-center py-6">
-          {/* Logo */}
-          <button 
-            onClick={() => scrollToSection('hero')}
-            className="btn-clean text-display text-2xl tracking-wider"
-          >
-            TIKKA Engine
-          </button>
+    <>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-background/80 backdrop-blur-md' : 'bg-transparent'
+      }`}>
+        <div className="section-padding">
+          <div className="flex justify-between items-center py-6">
+            {/* Logo */}
+            <button 
+              onClick={() => scrollToSection('hero')}
+              className="btn-clean text-display text-2xl tracking-wider"
+            >
+              TIKKA Engine
+            </button>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex space-x-12">
+            {/* Navigation Links */}
+            <div className="hidden md:flex space-x-12">
+              <button 
+                onClick={() => scrollToSection('engine')}
+                className="nav-link text-lg"
+              >
+                Tikka Engine
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="nav-link text-lg"
+              >
+                About Us
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="nav-link text-lg"
+              >
+                Contact
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
             <button 
-              onClick={() => scrollToSection('engine')}
-              className="nav-link text-lg"
+              className="md:hidden btn-clean mobile-menu-button p-2 -mr-2"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
             >
-              Tikka Engine
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="nav-link text-lg"
-            >
-              About Us
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="nav-link text-lg"
-            >
-              Contact
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+                className={`transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-90' : ''}`}
+              >
+                <path 
+                  d="M3 12H21" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                  className={`transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : ''}`}
+                />
+                <path 
+                  d="M3 6H21" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                  className={`transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}
+                />
+                <path 
+                  d="M3 18H21" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                  className={`transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}
+                />
+              </svg>
             </button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button className="md:hidden btn-clean">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 10H17" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-              <path d="M3 5H17" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-              <path d="M3 15H17" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-            </svg>
-          </button>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-[100] md:hidden">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          
+          {/* Menu Content */}
+          <div className="absolute top-0 right-0 h-full w-80 max-w-[80vw] bg-white mobile-menu">
+            <div className="flex flex-col h-full">
+              {/* Menu Header */}
+              <div className="flex justify-between items-center p-6">
+                <span className="text-display text-xl text-black">Menu</span>
+                <button 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="btn-clean p-2"
+                  aria-label="Close menu"
+                >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              {/* Menu Items */}
+              <div className="flex-1 flex flex-col p-6 space-y-6">
+                <button 
+                  onClick={() => scrollToSection('engine')}
+                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+                >
+                  Tikka Engine
+                </button>
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+                >
+                  About Us
+                </button>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+                >
+                  Contact
+                </button>
+              </div>
+
+              {/* Menu Footer */}
+              <div className="p-6">
+                <div className="text-sm text-gray-500">
+                  © 2025 Tikka Engine
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
