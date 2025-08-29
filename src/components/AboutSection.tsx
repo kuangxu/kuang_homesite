@@ -16,7 +16,25 @@ const AboutSection = () => {
               />
             </div>
             <p className="text-body text-muted-foreground">
-              Hey everyone! We are Qin and Kuang, co-founders of Tikka.
+              Hey everyone! We are{' '}
+              <a 
+                href="https://www.linkedin.com/in/tikka-qinwei/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors underline"
+              >
+                Qin
+              </a>
+              {' '}and{' '}
+              <a 
+                href="https://www.linkedin.com/in/kuangxu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition-colors underline"
+              >
+                Kuang
+              </a>
+              , co-founders of Tikka.
             </p>
             <p className="text-body text-muted-foreground">
               We started Tikka because our families struggle with diabetes, and we see firsthand 

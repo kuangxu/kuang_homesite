@@ -39,7 +39,13 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const navHeight = 40; // Approximate height of the navigation bar
+      const elementPosition = element.offsetTop - navHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     // Close mobile menu after clicking a link
     setIsMobileMenuOpen(false);
