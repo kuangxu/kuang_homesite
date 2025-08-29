@@ -20,16 +20,17 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-8 md:mt-12 space-y-3 md:space-y-4 text-left">
-            <p className="text-lg md:text-subheading text-foreground">
+            <p className="text-body text-foreground text-center">
               Get your Tikka Engine today! 
             </p>
             
-            <div className="flex flex-row sm:flex-row items-center justify-center sm:items-start sm:justify-start gap-2 md:gap-8">
+            <div className="flex flex-row sm:flex-row items-center justify-center gap-2 md:gap-8">
               <a 
                 href="https://apps.apple.com/us/app/tikka-engine-eat-thrive/id6748516283" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground rounded-lg hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
+                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
+                style={{ borderRadius: '5px' }}
                 aria-label="Download on App Store"
               >
                 <svg className="w-5 h-5 md:w-9 md:h-9 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -45,7 +46,8 @@ const HeroSection = () => {
                 href="https://play.google.com/store/apps/details?id=com.tikkahealth.tikka&hl=en_US" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground rounded-lg hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
+                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
+                style={{ borderRadius: '5px' }}
                 aria-label="Get it on Google Play"
               >
                 <svg className="w-5 h-5 md:w-9 md:h-9 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">

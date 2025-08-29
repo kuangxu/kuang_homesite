@@ -15,17 +15,17 @@ const AboutSection = () => {
                 className="w-96 h-96 md:w-[500px] md:h-[500px] object-cover rounded-lg shadow-lg"
               />
             </div>
-            <p className="text-sm md:text-body text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               Hey everyone! We are Qin and Kuang, co-founders of Tikka.
             </p>
-            <p className="text-sm md:text-body text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               We started Tikka because our families struggle with diabetes, and we see firsthand 
               how a glucose-conscious diet often tastes awful and managing it can be such a pain. We decided to take this into our own hands. 
               With our combined expertise as Professors, computer scientists and data scientists, we believe we can 
               build a rigorous, transparent and powerful system to help millions struggling with diabetes, or who 
               simply want to live healthier lives, find delicious nutritious foods that are also glucose-friendly.
             </p>
-            <p className="text-sm md:text-body text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               At Tikka, we believe that the future journey of health lies in combining cutting-edge 
               technology, rigorous mathematics and deeply personal care. Join us!
             </p>
