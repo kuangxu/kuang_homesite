@@ -1,4 +1,48 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { useState, useEffect } from "react";
+
 const EngineSection = () => {
+  const [shuffledScreenshots, setShuffledScreenshots] = useState<Array<{
+    src: string;
+    alt: string;
+  }>>([]);
+
+  useEffect(() => {
+    const screenshots = [
+      {
+        src: "/assets/screenshots/screenshot-1.png",
+        alt: "Tikka Engine App Screenshot 1"
+      },
+      {
+        src: "/assets/screenshots/screenshot-2.png",
+        alt: "Tikka Engine App Screenshot 2"
+      },
+      {
+        src: "/assets/screenshots/screenshot-3.png",
+        alt: "Tikka Engine App Screenshot 3"
+      },
+      {
+        src: "/assets/screenshots/screenshot-4.png",
+        alt: "Tikka Engine App Screenshot 4"
+      }
+    ];
+
+    // Fisher-Yates shuffle algorithm
+    const shuffled = [...screenshots];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    setShuffledScreenshots(shuffled);
+  }, []);
+
   return (
     <section id="engine" className="section-spacing section-padding">
       <div className="max-w-6xl mx-auto">
@@ -10,7 +54,9 @@ const EngineSection = () => {
             backed by open-source science you can trust.
           </p>
         </div>
-        
+
+       
+         
         <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
           <div className="space-y-8">
             <div className="space-y-4">
@@ -60,6 +106,34 @@ const EngineSection = () => {
           </div>
         </div>
       </div>
+        {/* Screenshots Carousel */}
+        <div className="relative max-w-4xl mx-auto mb-20">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {shuffledScreenshots.map((screenshot, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-2">
+                    <div className="overflow-hidden rounded-2xl shadow-lg">
+                      <img
+                        src={screenshot.src}
+                        alt={screenshot.alt}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
     </section>
   );
 };
