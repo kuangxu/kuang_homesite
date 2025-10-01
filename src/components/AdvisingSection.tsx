@@ -84,25 +84,6 @@ const AdvisingSection = () => {
               </div>
             </div>
 
-            <div className="mt-8 md:mt-12 text-center">
-              <p className="text-body text-muted-foreground mb-4">
-                Interested in working with me? Please reach out to discuss potential opportunities.
-              </p>
-              <a 
-                href="mailto:kuangxu@stanford.edu"
-                className="inline-flex items-center justify-center p-3 md:p-4 bg-background text-foreground hover:bg-muted transition-colors duration-300 min-w-[200px]"
-                style={{ borderRadius: '5px' }}
-                aria-label="Contact for advising"
-              >
-                <svg className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                <div className="ml-3 md:ml-4">
-                  <div className="text-sm md:text-base font-medium">Contact Me</div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>
