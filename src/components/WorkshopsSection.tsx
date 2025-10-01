@@ -2,7 +2,7 @@ const WorkshopsSection = () => {
   return (
     <section id="workshops" className="section-spacing section-padding">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-heading mb-6">Executive Workshops and Consulting</h2>
         </div>
         

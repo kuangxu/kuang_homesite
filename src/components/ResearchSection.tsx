@@ -31,10 +31,6 @@ const ResearchSection = () => {
   return (
     <section id="research" className="section-spacing section-padding">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-heading mb-6">Research</h2>
-        </div>
-        
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Sidebar Navigation */}
           <div className="lg:w-64 flex-shrink-0">
@@ -89,6 +85,9 @@ const ResearchSection = () => {
 
           {/* Main Content */}
           <div className="flex-1 space-y-12">
+            <div className="text-left mb-8">
+              <h2 className="text-heading mb-6">Research</h2>
+            </div>
             <div className="space-y-8 md:space-y-12 text-left">
               <p className="text-body text-muted-foreground">
                 I publish under the name <strong>Xu Kuang</strong>, cited as <strong>X. Kuang</strong>. Prior to June 2023, I published under the name <strong>Kuang Xu</strong>, cited as <strong>K. Xu</strong>.
