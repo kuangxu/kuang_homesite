@@ -7,7 +7,7 @@ const HeroSectionKuang = () => {
           <div className="lg:col-span-4 space-y-6">
             <div className="fade-in w-[90%]">
               <img 
-                src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
+                src="/kuang_homesite/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
                 alt="Kuang Xu" 
                 className="w-full aspect-square object-cover"
               />
@@ -127,7 +127,7 @@ const HeroSectionKuang = () => {
             {/* Banner Image */}
             <div className="pt-4">
               <img 
-                src="/2401302024_01_29_Stanford011-copy-2-1536x557.jpeg" 
+                src="/kuang_homesite/2401302024_01_29_Stanford011-copy-2-1536x557.jpeg" 
                 alt="Kuang Xu at Stanford" 
                 className="w-full h-auto"
               />
