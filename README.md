@@ -1,8 +1,8 @@
-# Tikka Engine Homesite
+# Kuang Xu - Academic Homepage
 
 ## Project Overview
 
-A modern, minimalist website for Tikka Engine - an AI-powered platform that helps users find delicious and nutritious meals while keeping blood glucose in check.
+A modern, minimalist website for Kuang Xu - Associate Professor of Operations Research at Stanford Graduate School of Business.
 
 ## Technologies Used
 
@@ -27,7 +27,7 @@ This project is built with:
 git clone <YOUR_GIT_URL>
 
 # Step 2: Navigate to the project directory
-cd tikka-engine-homesite
+cd kuang-homepage
 
 # Step 3: Install dependencies
 npm install

@@ -1,84 +1,142 @@
-import { trackButtonClick, trackExternalLink } from '@/lib/analytics';
-
-const HeroSection = () => {
-  const handleAppStoreClick = () => {
-    trackButtonClick('app_store_download', '/');
-    trackExternalLink('https://apps.apple.com/us/app/tikka-engine-eat-thrive/id6748516283', 'App Store Download');
-  };
-
-  const handleGooglePlayClick = () => {
-    trackButtonClick('google_play_download', '/');
-    trackExternalLink('https://play.google.com/store/apps/details?id=com.tikkahealth.tikka&hl=en_US', 'Google Play Download');
-  };
-
+const HeroSectionKuang = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center section-padding">
-      <div className="text-center max-w-4xl mx-auto fade-in">
-        <h1 className="text-4xl md:text-6xl lg:text-8xl mb-8 md:mb-12 lg:mb-16 font-light tracking-widest uppercase">
-          T I K K A
-        </h1>
-        <div className="max-w-4xl mx-auto space-y-8 md:space-y-12 text-left">
-          <p className="text-body text-muted-foreground">
-            Imagine a world where we anticipate your body's needs before you even feel them, where 
-            cutting-edge AI and machine learning come together to help you find a delicious and nutrious meal that 
-            also keeps blood glucose in check.
-          </p>
-          <p className="text-body text-muted-foreground">
-            That's the future we're building at Tikka to empower millions to live healthier, more vibrant 
-            lives. 
-          </p>
-          <p className="text-body text-muted-foreground">
-          And we're just getting started.
-          </p>
-
-          <div className="mt-8 md:mt-12 space-y-3 md:space-y-4 text-left">
-            <p className="text-body text-foreground text-center">
-              Get your Tikka Engine today! 
-            </p>
+    <section id="hero" className="min-h-screen flex items-center section-padding py-32 md:py-40">
+      <div className="w-full max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Left Column - Photo and Links */}
+          <div className="lg:col-span-4 space-y-6">
+            <div className="fade-in w-[90%]">
+              <img 
+                src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
+                alt="Kuang Xu" 
+                className="w-full aspect-square object-cover"
+              />
+            </div>
             
-            <div className="flex flex-row sm:flex-row items-center justify-center gap-2 md:gap-8">
+            {/* Contact Links */}
+            <div className="space-y-3 text-sm">
               <a 
-                href="https://apps.apple.com/us/app/tikka-engine-eat-thrive/id6748516283" 
-                target="_blank"
+                href="https://www.linkedin.com/in/kuangxu/" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                onClick={handleAppStoreClick}
-                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
-                style={{ borderRadius: '5px' }}
-                aria-label="Download on App Store"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
-                <svg className="w-5 h-5 md:w-9 md:h-9 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
-                <div className="ml-2 md:ml-4 text-center sm:text-left flex-1">
-                  <div className="text-xs md:text-sm">Download on the</div>
-                  <div className="text-xs md:text-base font-medium">App Store</div>
-                </div>
+                LinkedIn
               </a>
-              
               <a 
-                href="https://play.google.com/store/apps/details?id=com.tikkahealth.tikka&hl=en_US" 
-                target="_blank"
+                href="https://twitter.com/ProfKuangXu" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                onClick={handleGooglePlayClick}
-                className="inline-flex items-center justify-center p-2 md:p-4 bg-background text-foreground border border-foreground hover:bg-muted transition-colors duration-300 min-w-[150px] md:min-w-[220px]"
-                style={{ borderRadius: '5px' }}
-                aria-label="Get it on Google Play"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
-                <svg className="w-5 h-5 md:w-9 md:h-9 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
-                <div className="ml-2 md:ml-4 text-center sm:text-left flex-1">
-                  <div className="text-xs md:text-sm">GET IT ON</div>
-                  <div className="text-xs md:text-base font-medium">Google Play</div>
+                X.com
+              </a>
+              <a 
+                href="https://scholar.google.com/citations?user=kuangxu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                </svg>
+                Google Scholar
+              </a>
+              <a 
+                href="https://www.youtube.com/@profkuang" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                YouTube
+              </a>
+              <a 
+                href="mailto:kuangxu@stanford.edu"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                kuangxu@stanford.edu
+              </a>
+              <a 
+                href="https://kuangxu.substack.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+                </svg>
+                Substack Newsletter
+              </a>
+              <div className="pt-2 space-y-1 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <svg className="w-4 h-4 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <div className="text-sm">
+                    Knight Management Center<br/>
+                    655 Knight Way<br/>
+                    Stanford, CA 94305-5015
+                  </div>
                 </div>
+              </div>
+              <a 
+                href="https://www.gsb.stanford.edu/faculty-research/faculty/kuang-xu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors pt-2"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Stanford GSB Faculty Profile
               </a>
             </div>
           </div>
 
+          {/* Right Column - Bio */}
+          <div className="lg:col-span-8 space-y-6 fade-in">
+            <p className="text-body text-muted-foreground">
+              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. He is an expert in Operations Research, AI and Data Science innovation, supply chains and logistics, and data-driven decision-making. He is a Co-Creator of <a href="http://aistanford.org" target="_blank" rel="noopener" className="underline hover:text-foreground transition-colors"><em>AI and Data Science Strategy</em></a>, the first Stanford course focusing on the strategy, management and entrepreneurship of AI and Data Science.
+            </p>
+            <p className="text-body text-muted-foreground">
+              Kuang's <a href="/research" className="underline hover:text-foreground transition-colors">research</a> focuses on decision-making under uncertainty, leveraging tools from operations research, statistics and machine learning. His work has been published in leading academic journals including <em>Operations Research</em> and <em>Management Science</em>, and has received a number of prestigious awards, including the <em>George E. Nicholson Prize</em> from the <em>Institute for Operations Research and the Management Sciences (INFORMS)</em>, the Best Paper Award as well as Outstanding Student Paper Award from the <em>Association for Computing Machinery (ACM)</em>, <em>Special Interest Group on Measurement and Evaluation (SIGMETRICS)</em>, and an <em>ACM SIGMETRICS Rising Star Research Award</em>. He serves as an Associate Editor for <em>Management Science</em> and <em>Operations Research</em> in Data Science and Stochastic Modeling. His research and writing have been featured in a variety of media outlets including the <em>NPR</em>, <em>PBS</em>, <em>NBC</em> and <em>USA Today</em>.
+            </p>
+            <p className="text-body text-muted-foreground">
+              Kuang advises companies and investment funds on how to build core AI and Data Science capabilities and strategic moats. He has served as the Chief Data Science Advisor for Shipt Inc., Senior Advisor to Uber Inc., and scientific advisors to a number of startups.
+            </p>
+            <p className="text-body text-muted-foreground">
+              Kuang received his Ph.D. degree in Electrical Engineering and Computer Science from MIT (2019), and the Bachelor of Science degree from the University of Illinois at Urbana-Champaign (2009). He is a native of Suzhou, China.
+            </p>
+
+            {/* Banner Image */}
+            <div className="pt-4">
+              <img 
+                src="/2401302024_01_29_Stanford011-copy-2-1536x557.jpeg" 
+                alt="Kuang Xu at Stanford" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default HeroSectionKuang;

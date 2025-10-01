@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navigation = () => {
+const NavigationKuang = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +41,7 @@ const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navHeight = 40; // Approximate height of the navigation bar
+      const navHeight = 200; // Height to scroll to section titles (nav bar + section padding)
       const elementPosition = element.offsetTop - navHeight;
       
       window.scrollTo({
@@ -49,6 +51,18 @@ const Navigation = () => {
     }
     // Close mobile menu after clicking a link
     setIsMobileMenuOpen(false);
+  };
+
+  const handleNavClick = (path: string, sectionId?: string) => {
+    setIsMobileMenuOpen(false);
+    if (location.pathname !== path) {
+      // If navigating to a different page, let the router handle it
+      return;
+    }
+    // If on the same page, scroll to section
+    if (sectionId) {
+      scrollToSection(sectionId);
+    }
   };
 
   const toggleMobileMenu = (e: React.MouseEvent) => {
@@ -62,35 +76,48 @@ const Navigation = () => {
         isScrolled ? 'bg-background/80 backdrop-blur-md' : 'bg-transparent'
       }`}>
         <div className="section-padding">
-          <div className="flex justify-between items-center py-6">
-            {/* Logo */}
-            <button 
-              onClick={() => scrollToSection('hero')}
-              className="btn-clean text-display text-2xl tracking-wider"
-            >
-              TIKKA Engine
-            </button>
+          <div className="max-w-7xl mx-auto">
+            <div className="flex justify-between items-end py-6">
+              {/* Logo */}
+              <Link 
+                to="/"
+                className="btn-clean flex flex-col pt-4"
+              >
+                <span className="text-display text-4xl md:text-5xl tracking-wider font-bold">Kuang Xu</span>
+                <span className="text-base md:text-lg text-muted-foreground font-normal tracking-normal normal-case mt-1">
+                  Associate Professor of Operations Research, Stanford GSB
+                </span>
+              </Link>
 
-            {/* Navigation Links */}
-            <div className="hidden md:flex space-x-12">
-              <button 
-                onClick={() => scrollToSection('engine')}
+              {/* Navigation Links */}
+              <div className="hidden md:flex space-x-8 pb-1">
+              <Link 
+                to="/"
+                onClick={() => location.pathname === '/' && scrollToSection('hero')}
                 className="nav-link text-lg"
               >
-                Tikka Engine
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+                Home
+              </Link>
+              <Link 
+                to="/research"
                 className="nav-link text-lg"
               >
-                About Us
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+                Research
+              </Link>
+              <Link 
+                to="/#advising"
+                onClick={() => handleNavClick('/', 'advising')}
                 className="nav-link text-lg"
               >
-                Contact
-              </button>
+                Advising
+              </Link>
+              <Link 
+                to="/#workshops"
+                onClick={() => handleNavClick('/', 'workshops')}
+                className="nav-link text-lg"
+              >
+                Workshops and Consulting
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -131,6 +158,7 @@ const Navigation = () => {
               </svg>
             </button>
           </div>
+          </div>
         </div>
       </nav>
 
@@ -165,30 +193,40 @@ const Navigation = () => {
 
             {/* Menu Items */}
             <div className="flex-1 flex flex-col p-6 space-y-6">
-              <button 
-                onClick={() => scrollToSection('engine')}
+              <Link 
+                to="/"
+                onClick={() => handleNavClick('/', 'hero')}
                 className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
               >
-                Tikka Engine
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+                Home
+              </Link>
+              <Link 
+                to="/research"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
               >
-                About Us
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+                Research
+              </Link>
+              <Link 
+                to="/#advising"
+                onClick={() => handleNavClick('/', 'advising')}
                 className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
               >
-                Contact
-              </button>
+                Advising
+              </Link>
+              <Link 
+                to="/#workshops"
+                onClick={() => handleNavClick('/', 'workshops')}
+                className="text-left text-lg font-medium py-3 text-black hover:text-primary transition-colors"
+              >
+                Executive Workshops and Consulting
+              </Link>
             </div>
 
             {/* Menu Footer */}
             <div className="p-6">
               <div className="text-sm text-gray-500">
-                © 2025 Tikka Engine
+                © 2025 Kuang Xu
               </div>
             </div>
           </div>
@@ -198,4 +236,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default NavigationKuang;
