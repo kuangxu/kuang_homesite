@@ -2,23 +2,36 @@ import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry }
 
 export const workingPapers: PublicationEntry[] = [
   {
-    title: "Non-Stationary Contextual Bandit Learning via Neural Predictive Ensemble Sampling",
-    titleUrl: "https://arxiv.org/abs/2310.07786",
+    title: "Behavioral Generative Agents for Energy Operations",
+    titleUrl: "https://arxiv.org/abs/2506.12664",
     coAuthors: [
-      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
-      { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" },
-      { name: "Zheqing (Bill) Zhu", url: "https://www.zheqingbillzhu.com/" }
+      { name: "Cong Chen" },
+      { name: "Omer Karaduman" }
     ],
-    status: "working-paper"
+    status: "submitted",
+    year: "2025"
   },
   {
-    title: "A Definition of Non-Stationary Bandits",
-    titleUrl: "https://arxiv.org/abs/2302.12202",
+    title: "Shortlist Experiments",
+    titleUrl: "https://drive.google.com/drive/folders/1yctHW8jdDNquE5Z2m6jOvUqr9imwwvh4?usp=drive_link",
     coAuthors: [
-      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
-      { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
+      { name: "Chao Qin" }
     ],
-    status: "working-paper"
+    status: "working-paper",
+    year: "2025",
+    links: [
+      { label: "Extended Abstract", url: "https://drive.google.com/drive/folders/1yctHW8jdDNquE5Z2m6jOvUqr9imwwvh4?usp=drive_link", type: "other" }
+    ]
+  },
+  {
+    title: "Prioritizing Recurrent Services",
+    titleUrl: "https://arxiv.org/abs/2509.11383",
+    coAuthors: [
+      { name: "Lin Franklin Feng" },
+      { name: "Yue Hu" }
+    ],
+    status: "working-paper",
+    year: "2025"
   },
   {
     title: "Experimenting under Stochastic Congestion",
@@ -28,32 +41,17 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
-    status: "working-paper"
+    status: "submitted",
+    year: "2025"
   },
   {
-    title: "Detecting Service Slowdown using Observational Data",
+    title: "Learning Service Slowdown using Observational Data",
     titleUrl: "https://arxiv.org/abs/2401.07305",
     coAuthors: [
       { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
     ],
-    status: "working-paper"
-  },
-  {
-    title: "Treatment Effects in Market Equilibrium",
-    titleUrl: "https://arxiv.org/abs/2109.11647",
-    coAuthors: [
-      { name: "Evan Munro", url: "https://www.evanmunro.ca/" },
-      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
-    ],
-    status: "working-paper"
-  },
-  {
-    title: "CARE: Resource Allocation Using Sparse Communication",
-    titleUrl: "https://arxiv.org/abs/2206.02410",
-    coAuthors: [
-      { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
-    ],
-    status: "working-paper"
+    status: "submitted",
+    year: "2025"
   },
   {
     title: "Nonstationary Bandit Learning via Predictive Sampling",
@@ -62,7 +60,8 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
       { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
     ],
-    status: "working-paper",
+    status: "submitted",
+    year: "2025",
     links: [
       { label: "Preliminary version, AISTATS 2023", url: "https://proceedings.mlr.press/v206/liu23e/liu23e.pdf", type: "preliminary" }
     ]
@@ -71,13 +70,34 @@ export const workingPapers: PublicationEntry[] = [
 
 export const journalPublications: PublicationEntry[] = [
   {
+    title: "Treatment Effects in Market Equilibrium",
+    titleUrl: "https://arxiv.org/abs/2109.11647",
+    coAuthors: [
+      { name: "Evan Munro", url: "https://www.evanmunro.ca/" },
+      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
+    ],
+    journal: "American Economic Review",
+    year: "2025",
+    status: "forthcoming"
+  },
+  {
+    title: "Load Balancing Using Sparse Communication",
+    titleUrl: "https://arxiv.org/pdf/2206.02410",
+    coAuthors: [
+      { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
+    ],
+    journal: "Operations Research",
+    year: "2025",
+    status: "forthcoming"
+  },
+  {
     title: "Weak Signal Asymptotics for Sequentially Randomized Experiments",
     titleUrl: "https://arxiv.org/abs/2101.09855",
     coAuthors: [
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
     journal: "Management Science",
-    status: "forthcoming"
+    year: "2024"
   },
   {
     title: "Learner-Private Online Convex Optimization",

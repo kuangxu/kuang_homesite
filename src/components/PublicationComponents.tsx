@@ -22,7 +22,7 @@ interface TalkListProps {
 
 const CoAuthorsList = ({ coAuthors }: { coAuthors: any[] }) => (
   <>
-    Co-authored with: {coAuthors.map((author, index) => (
+    {coAuthors.map((author, index) => (
       <span key={index}>
         {author.url ? (
           <a href={author.url} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-foreground">
@@ -89,18 +89,21 @@ export const PublicationList = ({ publications }: PublicationListProps) => (
             <>
               {pub.journal && ' | '}
               Forthcoming
+              {pub.year && !pub.journal && `, ${pub.year}`}
             </>
           )}
           {pub.status === 'submitted' && (
             <>
               {pub.journal && ' | '}
               Submitted
+              {pub.year && !pub.journal && `, ${pub.year}`}
             </>
           )}
           {pub.status === 'working-paper' && (
             <>
               {pub.journal && ' | '}
               Working paper
+              {pub.year && !pub.journal && `, ${pub.year}`}
             </>
           )}
           
