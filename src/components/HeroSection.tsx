@@ -1,6 +1,6 @@
 const HeroSectionKuang = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center section-padding py-32 md:py-40">
+    <section id="hero" className="min-h-screen flex items-center section-padding pt-48 pb-32 md:py-40">
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-start">
           {/* Left Column - Photo and Links */}

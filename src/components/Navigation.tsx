@@ -41,7 +41,7 @@ const NavigationKuang = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navHeight = 200; // Height to scroll to section titles (nav bar + section padding)
+      const navHeight = 120; // Height to scroll to section titles (nav bar + section padding)
       const elementPosition = element.offsetTop - navHeight;
       
       window.scrollTo({
