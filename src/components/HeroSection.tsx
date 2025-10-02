@@ -2,10 +2,10 @@ const HeroSectionKuang = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center section-padding py-32 md:py-40">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-start">
           {/* Left Column - Photo and Links */}
-          <div className="lg:w-96 flex-shrink-0 space-y-6">
-            <div className="fade-in w-[85%]">
+          <div className="lg:w-96 flex-shrink-0">
+            <div className="fade-in w-[85%] mb-6">
               <img 
                 src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
                 alt="Kuang Xu" 
