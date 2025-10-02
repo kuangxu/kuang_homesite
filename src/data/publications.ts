@@ -2,32 +2,23 @@ import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry }
 
 export const workingPapers: PublicationEntry[] = [
   {
-    title: "Prioritizing Recurrent Services",
-    titleUrl: "https://arxiv.org/abs/2509.11383",
+    title: "Non-Stationary Contextual Bandit Learning via Neural Predictive Ensemble Sampling",
+    titleUrl: "https://arxiv.org/abs/2310.07786",
     coAuthors: [
-      { name: "Lin Franklin Feng" },
-      { name: "Yue Hu" }
+      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
+      { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" },
+      { name: "Zheqing (Bill) Zhu", url: "https://www.zheqingbillzhu.com/" }
     ],
     status: "working-paper"
   },
   {
-    title: "Load Balancing Using Sparse Communication",
-    titleUrl: "https://arxiv.org/pdf/2206.02410",
+    title: "A Definition of Non-Stationary Bandits",
+    titleUrl: "https://arxiv.org/abs/2302.12202",
     coAuthors: [
-      { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
+      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
+      { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
     ],
-    status: "forthcoming",
-    journal: "Operations Research"
-  },
-  {
-    title: "Treatment Effects in Market Equilibrium",
-    titleUrl: "https://arxiv.org/abs/2109.11647",
-    coAuthors: [
-      { name: "Evan Munro", url: "https://www.evanmunro.ca" },
-      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
-    ],
-    status: "forthcoming",
-    journal: "American Economic Review"
+    status: "working-paper"
   },
   {
     title: "Experimenting under Stochastic Congestion",
@@ -37,7 +28,7 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
-    status: "submitted"
+    status: "working-paper"
   },
   {
     title: "Detecting Service Slowdown using Observational Data",
@@ -45,7 +36,24 @@ export const workingPapers: PublicationEntry[] = [
     coAuthors: [
       { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
     ],
-    status: "submitted"
+    status: "working-paper"
+  },
+  {
+    title: "Treatment Effects in Market Equilibrium",
+    titleUrl: "https://arxiv.org/abs/2109.11647",
+    coAuthors: [
+      { name: "Evan Munro", url: "https://www.evanmunro.ca/" },
+      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
+    ],
+    status: "working-paper"
+  },
+  {
+    title: "CARE: Resource Allocation Using Sparse Communication",
+    titleUrl: "https://arxiv.org/abs/2206.02410",
+    coAuthors: [
+      { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
+    ],
+    status: "working-paper"
   },
   {
     title: "Nonstationary Bandit Learning via Predictive Sampling",
@@ -54,7 +62,7 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
       { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
     ],
-    status: "submitted",
+    status: "working-paper",
     links: [
       { label: "Preliminary version, AISTATS 2023", url: "https://proceedings.mlr.press/v206/liu23e/liu23e.pdf", type: "preliminary" }
     ]
@@ -69,7 +77,7 @@ export const journalPublications: PublicationEntry[] = [
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
     journal: "Management Science",
-    year: "2024"
+    status: "forthcoming"
   },
   {
     title: "Learner-Private Online Convex Optimization",
@@ -128,7 +136,8 @@ export const journalPublications: PublicationEntry[] = [
     pages: "5:1575-1590",
     links: [
       { label: "arXiv version", url: "https://arxiv.org/abs/1805.02136", type: "arxiv" },
-      { label: "Preliminary version, Conference on Learning Theory (COLT) 2018", url: "https://proceedings.mlr.press/v75/tsitsiklis18a.html", type: "preliminary" }
+      { label: "Preliminary version, Conference on Learning Theory (COLT) 2018", url: "https://proceedings.mlr.press/v75/tsitsiklis18a.html", type: "preliminary" },
+      { label: "Talk at COLT", url: "https://www.youtube.com/watch?v=TICOZ8HbG5k&t=1s", type: "talk" }
     ]
   },
   {
@@ -226,7 +235,8 @@ export const journalPublications: PublicationEntry[] = [
     pages: "568-586",
     links: [
       { label: "arXiv version", url: "https://arxiv.org/abs/1603.00544", type: "arxiv" },
-      { label: "Preliminary version, Conference on Learning Theory (COLT), 2016", url: "http://www.jmlr.org/proceedings/papers/v49/massoulie16.html", type: "preliminary" }
+      { label: "Preliminary version, Conference on Learning Theory (COLT), 2016", url: "http://www.jmlr.org/proceedings/papers/v49/massoulie16.html", type: "preliminary" },
+      { label: "Talk at COLT", url: "https://www.youtube.com/watch?v=dUMLi0Xf9Gc&t=31s", type: "talk" }
     ]
   },
   {
@@ -342,7 +352,7 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "Optimal Query Complexity for Private Sequential Learning against Eavesdropping",
-    titleUrl: "https://arxiv.org/abs/2102.11976",
+    titleUrl: "http://proceedings.mlr.press/v130/xu21f/xu21f.pdf",
     coAuthors: [
       { name: "Jiaming Xu", url: "https://www.fuqua.duke.edu/faculty/jiaming-xu" },
       { name: "Dana (Xiaoqian) Yang", url: "https://danayang.github.io/" }
@@ -350,14 +360,14 @@ export const conferencePublications: ConferenceEntry[] = [
     conference: "Proceedings of International Conference on Artificial Intelligence and Statistics (AISTATS)",
     year: "2021",
     links: [
-      { label: "arXiv version", url: "https://arxiv.org/abs/2102.11976", type: "arxiv" }
+      { label: "arXiv version", url: "https://arxiv.org/abs/1909.09836", type: "arxiv" }
     ]
   },
   {
     title: "Information, Memory and Capacity in Dynamic Resource Allocation",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/xz_sigm19.pdf",
+    titleUrl: "https://dl.acm.org/doi/10.1145/3309697.3331488",
     coAuthors: [
-      { name: "Yuan Zhong" }
+      { name: "Yuan Zhong", url: "https://www.google.com/search?client=safari&rls=en&q=Yuan+Zhong&ie=UTF-8&oe=UTF-8" }
     ],
     conference: "Proceedings of ACM SIGMETRICS",
     location: "Phoenix, Arizona",
@@ -369,18 +379,18 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "Query Complexity of Bayesian Private Learning",
-    titleUrl: "https://arxiv.org/abs/1805.02136",
+    titleUrl: "http://papers.nips.cc/paper/7510-query-complexity-of-bayesian-private-learning",
     conference: "Proceedings of the Conference on Neural Information Processing Systems (NeurIPS)",
     location: "Montreal",
     year: "2018",
     month: "December",
     links: [
-      { label: "arXiv version", url: "https://arxiv.org/abs/1805.02136", type: "arxiv" }
+      { label: "arXiv version", url: "https://arxiv.org/pdf/1911.06903.pdf", type: "arxiv" }
     ]
   },
   {
     title: "Private Sequential Learning",
-    titleUrl: "https://proceedings.mlr.press/v75/tsitsiklis18a.html",
+    titleUrl: "http://proceedings.mlr.press/v75/tsitsiklis18a.html",
     coAuthors: [
       { name: "John N. Tsitsiklis", url: "https://www.mit.edu/~jnt/home.html" },
       { name: "Zhi Xu", url: "https://scholar.google.com/citations?user=CbGdL4cAAAAJ&hl=en" }
@@ -390,7 +400,7 @@ export const conferencePublications: ConferenceEntry[] = [
     year: "2018",
     month: "July",
     links: [
-      { label: "Extended technical report", url: "https://proceedings.mlr.press/v75/tsitsiklis18a.html", type: "manuscript" },
+      { label: "Extended technical report", url: "https://arxiv.org/abs/1805.02136.pdf", type: "manuscript" },
       { label: "Talk", url: "https://www.youtube.com/watch?v=TICOZ8HbG5k&t=1s", type: "talk" }
     ]
   },
@@ -407,7 +417,7 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "On the Capacity of Information Processing Systems",
-    titleUrl: "http://www.jmlr.org/proceedings/papers/v49/massoulie16.html",
+    titleUrl: "http://proceedings.mlr.press/v49/massoulie16.pdf",
     coAuthors: [
       { name: "Laurent Massoulié", url: "https://www.di.ens.fr/laurent.massoulie/" }
     ],
@@ -416,13 +426,13 @@ export const conferencePublications: ConferenceEntry[] = [
     year: "2016",
     month: "June",
     links: [
-      { label: "Extended technical report", url: "http://www.jmlr.org/proceedings/papers/v49/massoulie16.html", type: "manuscript" },
+      { label: "Extended technical report", url: "https://arxiv.org/pdf/1603.00544.pdf", type: "manuscript" },
       { label: "Talk", url: "https://www.youtube.com/watch?v=dUMLi0Xf9Gc&t=31s", type: "talk" }
     ]
   },
   {
     title: "Queueing System Topologies with Limited Flexibility",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "https://dl.acm.org/doi/abs/10.1145/2494232.2465757",
     coAuthors: [
       { name: "John N. Tsitsiklis", url: "https://www.mit.edu/~jnt/home.html" }
     ],
@@ -432,12 +442,12 @@ export const conferencePublications: ConferenceEntry[] = [
     month: "June",
     awards: ["Best Paper Award and Kenneth C. Sevcik Outstanding Student Paper Award"],
     links: [
-      { label: "Extended technical report", url: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf", type: "manuscript" }
+      { label: "Extended technical report", url: "http://web.stanford.edu/~kuangxu/papers/c-13-SigRep.pdf", type: "manuscript" }
     ]
   },
   {
     title: "On the Power of (even a little) Centralization in Distributed Processing",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXu11SIG.pdf",
     coAuthors: [
       { name: "John N. Tsitsiklis", url: "https://www.mit.edu/~jnt/home.html" }
     ],
@@ -448,7 +458,7 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "Self-Synchronizing Properties of CSMA Wireless Multi-hop Networks",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://infoscience.epfl.ch/record/147917/files/XuDT10.pdf",
     coAuthors: [
       { name: "Olivier Dousse" },
       { name: "Patrick Thiran" }
@@ -460,7 +470,7 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "PAPR Reduction for Beamforming OFDM via Constellation-Beam Modification",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/XuJ09.pdf",
     coAuthors: [
       { name: "Douglas L. Jones" }
     ],
@@ -471,7 +481,7 @@ export const conferencePublications: ConferenceEntry[] = [
   },
   {
     title: "Promoting undergraduate research in ECE (PURE): Connecting undergraduates with graduate research mentors",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/09VAN01.pdf",
     coAuthors: [
       { name: "Elizabeth Van Ruitenbeek" }
     ],
@@ -479,8 +489,8 @@ export const conferencePublications: ConferenceEntry[] = [
     year: "2009",
     month: "June",
     links: [
-      { label: "PURE program website", url: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf", type: "other" },
-      { label: "Illinois news coverage: 1, 2, 3", url: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf", type: "coverage" }
+      { label: "PURE program website", url: "https://wiki.illinois.edu/wiki/display/PURE/Home", type: "other" },
+      { label: "Illinois news coverage", url: "http://www.ece.illinois.edu/mediacenter/article.asp?id=377", type: "coverage" }
     ]
   }
 ];
@@ -488,7 +498,7 @@ export const conferencePublications: ConferenceEntry[] = [
 export const theses: ThesisEntry[] = [
   {
     title: "On the Power of (even a little) Flexibility in Dynamic Resource Allocation",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "https://dspace.mit.edu/handle/1721.1/91101",
     degree: "Ph.D. Thesis",
     institution: "Massachusetts Institute of Technology",
     year: "2014",
@@ -497,7 +507,7 @@ export const theses: ThesisEntry[] = [
   },
   {
     title: "On the Power of Centralization in Distributed Processing",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/mastersthesis.pdf",
     degree: "S.M. Thesis",
     institution: "Massachusetts Institute of Technology",
     year: "2011",
@@ -506,7 +516,7 @@ export const theses: ThesisEntry[] = [
   },
   {
     title: "Modeling and Analysis of Peer-to-Peer (P2P) Live Video Streaming",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/undergradthesis.pdf",
     degree: "Undergraduate Thesis",
     institution: "University of Illinois at Urbana-Champaign",
     year: "2009",
@@ -517,39 +527,40 @@ export const theses: ThesisEntry[] = [
 export const otherManuscripts: PublicationEntry[] = [
   {
     title: "Gaussian Imagination in Bandit Learning",
+    titleUrl: "https://arxiv.org/abs/2201.01902",
     coAuthors: [
       { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
-      { name: "Aditya Devraj", url: "https://sites.google.com/stanford.edu/adevraj/home" },
+      { name: "Aditya Devraj" },
       { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
     ]
   },
   {
     title: "A bit better? Quantifying information for bandit learning",
-    titleUrl: "https://arxiv.org/abs/2102.11976",
+    titleUrl: "https://arxiv.org/pdf/2102.09488.pdf",
     coAuthors: [
-      { name: "Aditya Devraj", url: "https://sites.google.com/stanford.edu/adevraj/home" },
+      { name: "Aditya Devraj" },
       { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
     ],
     links: [
-      { label: "arXiv", url: "https://arxiv.org/abs/2102.11976", type: "arxiv" }
+      { label: "arXiv", url: "https://arxiv.org/pdf/2102.09488.pdf", type: "arxiv" }
     ]
   },
   {
     title: "Private Genetic Genealogy Search",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "http://ssrn.com/abstract=3875606",
     coAuthors: [
       { name: "Mine Su Erturk", url: "https://sites.google.com/stanford.edu/mserturk/home" }
     ],
-    notes: "manuscript (2022)",
+    notes: "M. S. Erturk and K. Xu, manuscript (2022)",
     links: [
-      { label: "SSRN", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502", type: "other" },
-      { label: "Podcast", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502", type: "other" },
-      { label: "GSB News", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502", type: "coverage" }
+      { label: "SSRN", url: "http://ssrn.com/abstract=3875606", type: "other" },
+      { label: "Podcast", url: "https://engineering.stanford.edu/magazine/kuang-xu-how-make-and-keep-genetic-data-private", type: "other" },
+      { label: "GSB News", url: "https://engineering.stanford.edu/magazine/kuang-xu-how-make-and-keep-genetic-data-private", type: "coverage" }
     ]
   },
   {
     title: "Beamforming MISO-OFDM PAPR reduction: A Space-user perspective",
-    titleUrl: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf",
+    titleUrl: "http://web.stanford.edu/~kuangxu/papers/XuTJ09.pdf",
     coAuthors: [
       { name: "T. Thomas" },
       { name: "D. L. Jones" }
@@ -557,7 +568,7 @@ export const otherManuscripts: PublicationEntry[] = [
     journal: "Technical Report",
     year: "2009",
     links: [
-      { label: "paper", url: "http://web.stanford.edu/~kuangxu/papers/TsiXuSSY12.pdf", type: "manuscript" }
+      { label: "paper", url: "http://web.stanford.edu/~kuangxu/papers/XuTJ09.pdf", type: "manuscript" }
     ]
   }
 ];
@@ -565,37 +576,37 @@ export const otherManuscripts: PublicationEntry[] = [
 export const mediaEntries: MediaEntry[] = [
   {
     title: "Kuang Xu: How to make (and keep) genetic data private?",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://engineering.stanford.edu/magazine/future-everything",
     outlet: "The Future of Everything Podcast, Episode #163"
   },
   {
     title: "New Research Suggests In-Person Voting May Be Less Risky Than Previously Thought",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://www.npr.org/2020/08/21/904739776/new-research-suggests-in-person-voting-may-be-less-risky-than-previously-thought",
     outlet: "National Public Radio (NPR)",
     date: "April 2020"
   },
   {
     title: "How risky is voting in person? Here's how to navigate your options during the pandemic",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://www.pbs.org/newshour/health/how-risky-is-voting-in-person-heres-how-to-navigate-your-options-during-the-pandemic",
     outlet: "Public Broadcasting Service (PBS)",
     date: "2020"
   },
   {
     title: "#GetMePPE: Why fully equipping health care workers against coronavirus keeps us all safer",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://www.nbcnews.com/think/opinion/getmeppe-why-fully-equipping-health-care-workers-against-coronavirus-keeps-ncna1167146",
     outlet: "NBC News",
     date: "March 2020",
     links: [
-      { label: "Model details can be found here", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502", type: "other" }
+      { label: "Model details", url: "http://www.columbia.edu/~cc3179/provider.htm", type: "other" }
     ]
   },
   {
     title: "Using the vacant hotel rooms for coronavirus patients would help reduce the time for us to get back to normal",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://www.businessinsider.com/fight-covid19-pandemic-use-hotels-coronavirus-patients-2020-4?fbclid=IwAR2WwMSspRcgTnXNycfBkq0U00eI_gHiqCdwRJlb8SyeFAypG_fIKJG_pCI",
     outlet: "Business Insider",
     date: "April 25, 2020",
     links: [
-      { label: "Model details can be found here", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502", type: "other" }
+      { label: "Model details", url: "https://docs.google.com/document/d/1EtzwRVZ58ZHN_VBfdtw-mA4IYdPOZsm73ZIGRjdpbns/edit?usp=sharing", type: "other" }
     ]
   }
 ];
@@ -603,25 +614,25 @@ export const mediaEntries: MediaEntry[] = [
 export const talks: TalkEntry[] = [
   {
     title: "Information-centric thinking in stochastic modeling and decision-making",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    titleUrl: "https://youtu.be/phWR82gMKRg?t=5243",
     event: "ACM SIGMETRICS Rising Star Research Award Lecture",
     year: "2020"
   },
   {
     title: "Privacy sequential learning",
-    titleUrl: "https://www.youtube.com/watch?v=TICOZ8HbG5k&t=1s",
+    titleUrl: "https://youtu.be/TICOZ8HbG5k",
     event: "COLT",
     year: "2018"
   },
   {
     title: "On the capacity of information processing system",
-    titleUrl: "https://www.youtube.com/watch?v=dUMLi0Xf9Gc&t=31s",
+    titleUrl: "https://www.youtube.com/watch?v=dUMLi0Xf9Gc",
     event: "COLT",
     year: "2016"
   },
   {
-    title: "On the power of (Even a little) resource pooling",
-    titleUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2784502",
+    title: "On the power of (even a little) resource pooling",
+    titleUrl: "https://vod.video.cornell.edu/media/ORIE+Colloquium+-+Kuang+Xu+(MIT)A+On+the+Power+of+(even+a+little)+Resource+Pooling+and+Flexibility/1_dzuj75fh#t=3:00",
     event: "Cornell ORIE Colloquium",
     year: "2013"
   }

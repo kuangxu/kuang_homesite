@@ -84,7 +84,7 @@ const NavigationKuang = () => {
                 className="btn-clean flex flex-col pt-4"
               >
                 <span className="text-display text-4xl md:text-5xl tracking-wider font-bold">Kuang Xu</span>
-                <span className="text-base md:text-lg text-muted-foreground font-normal tracking-normal normal-case mt-1">
+                <span className="text-lg md:text-xl text-muted-foreground font-normal tracking-normal normal-case mt-1">
                   Associate Professor of Operations Research, Stanford GSB
                 </span>
               </Link>

@@ -39,43 +39,43 @@ const ResearchSection = () => {
                 
                 <button
                   onClick={() => scrollToSection('working-papers')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Working Papers and Preprints
                 </button>
                 <button
                   onClick={() => scrollToSection('journal-publications')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Journal Publications
                 </button>
                 <button
                   onClick={() => scrollToSection('conference-publications')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Conference Publications
                 </button>
                 <button
                   onClick={() => scrollToSection('theses')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Theses
                 </button>
                 <button
                   onClick={() => scrollToSection('other-manuscripts')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Other Manuscripts
                 </button>
                 <button
                   onClick={() => scrollToSection('media')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Media on My Research
                 </button>
                 <button
                   onClick={() => scrollToSection('talks')}
-                  className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                  className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
                   Talks
                 </button>

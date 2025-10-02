@@ -2,19 +2,19 @@ const HeroSectionKuang = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center section-padding py-32 md:py-40">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left Column - Photo and Links */}
-          <div className="lg:col-span-4 space-y-6">
-            <div className="fade-in w-[90%]">
+          <div className="lg:w-96 flex-shrink-0 space-y-6">
+            <div className="fade-in w-[85%]">
               <img 
                 src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
                 alt="Kuang Xu" 
-                className="w-full aspect-square object-cover"
+                className="w-full aspect-square object-cover rounded-md"
               />
             </div>
             
             {/* Contact Links */}
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 text-base">
               <a 
                 href="https://www.linkedin.com/in/kuangxu/" 
                 target="_blank" 
@@ -86,7 +86,7 @@ const HeroSectionKuang = () => {
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
-                  <div className="text-sm">
+                  <div className="text-base">
                     Knight Management Center<br/>
                     655 Knight Way<br/>
                     Stanford, CA 94305-5015
@@ -110,7 +110,7 @@ const HeroSectionKuang = () => {
           </div>
 
           {/* Right Column - Bio */}
-          <div className="lg:col-span-8 space-y-6 fade-in">
+          <div className="flex-1 space-y-6 fade-in">
             <p className="text-body text-muted-foreground">
               Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. He is an expert in Operations Research, AI and Data Science innovation, supply chains and logistics, and data-driven decision-making. He is a Co-Creator of <a href="http://aistanford.org" target="_blank" rel="noopener" className="underline hover:text-foreground transition-colors"><em>AI and Data Science Strategy</em></a>, the first Stanford course focusing on the strategy, management and entrepreneurship of AI and Data Science. During 2024-2025, Kuang served as a Senior Staff Scientist at Uber, where he led efforts on Machine Learning and Agentic AI.  
             </p>
@@ -121,7 +121,7 @@ const HeroSectionKuang = () => {
               Kuang advises companies and investment funds on how to build core AI and Data Science capabilities and strategic moats. He has served as the Chief Data Science Advisor for Shipt Inc., Senior Advisor to Uber Inc., and scientific advisors to a number of startups.
             </p>
             <p className="text-body text-muted-foreground">
-              Kuang received his Ph.D. degree in Electrical Engineering and Computer Science from MIT (2019), and the Bachelor of Science degree from the University of Illinois at Urbana-Champaign (2009). He is a native of Suzhou, China.
+              Kuang received his Ph.D. degree in Electrical Engineering and Computer Science from MIT (2014), and the Bachelor of Science degree from the University of Illinois at Urbana-Champaign (2009). He is a native of Suzhou, China.
             </p>
 
             {/* Banner Image */}
@@ -129,7 +129,7 @@ const HeroSectionKuang = () => {
               <img 
                 src="/2401302024_01_29_Stanford011-copy-2-1536x557.jpeg" 
                 alt="Kuang Xu at Stanford" 
-                className="w-full h-auto"
+                className="w-full h-auto rounded-md"
               />
             </div>
           </div>

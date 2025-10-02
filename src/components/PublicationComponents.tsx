@@ -53,64 +53,79 @@ const PublicationLinks = ({ links }: { links: any[] }) => (
 export const PublicationList = ({ publications }: PublicationListProps) => (
   <div className="space-y-4 text-body text-muted-foreground">
     {publications.map((pub, index) => (
-      <p key={index}>
-        <strong className="text-foreground">
-          {pub.titleUrl ? (
-            <a href={pub.titleUrl} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-foreground">
-              {pub.title}
-            </a>
-          ) : (
-            pub.title
+      <div key={index} className="space-y-1">
+        {/* First row: Title */}
+        <div>
+          <strong className="text-foreground">
+            {pub.titleUrl ? (
+              <a href={pub.titleUrl} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-foreground">
+                {pub.title}
+              </a>
+            ) : (
+              pub.title
+            )}
+          </strong>
+        </div>
+        
+        {/* Second row: Co-authors */}
+        {pub.coAuthors && (
+          <div>
+            Co-authored with: <CoAuthorsList coAuthors={pub.coAuthors} />
+          </div>
+        )}
+        
+        {/* Third row: Publication info + links + status */}
+        <div>
+          {pub.journal && (
+            <>
+              <em>{pub.journal}</em>
+              {pub.year && `, ${pub.year}`}
+              {pub.volume && `, ${pub.volume}`}
+              {pub.pages && `, ${pub.pages}`}
+            </>
           )}
-        </strong>
-        <br/>
-        {pub.coAuthors && <><CoAuthorsList coAuthors={pub.coAuthors} /><br/></>}
-        {pub.journal && (
-          <>
-            <em>{pub.journal}</em>
-            {pub.year && `, ${pub.year}`}
-            {pub.volume && `, ${pub.volume}`}
-            {pub.pages && `, ${pub.pages}`}
-            <br/>
-          </>
-        )}
-        {pub.status === 'forthcoming' && (
-          <>
-            Forthcoming in <em>{pub.journal}</em>
-            <br/>
-          </>
-        )}
-        {pub.status === 'submitted' && (
-          <>
-            Submitted
-            <br/>
-          </>
-        )}
-        {pub.status === 'working-paper' && (
-          <>
-            Working paper
-            <br/>
-          </>
-        )}
-        {pub.links && (
-          <>
-            <PublicationLinks links={pub.links} />
-            <br/>
-          </>
-        )}
-        {pub.awards && (
-          <>
-            <strong><em>{pub.awards.join(', ')}</em></strong>
-            <br/>
-          </>
-        )}
+          
+          {pub.status === 'forthcoming' && (
+            <>
+              {pub.journal && ' | '}
+              Forthcoming
+            </>
+          )}
+          {pub.status === 'submitted' && (
+            <>
+              {pub.journal && ' | '}
+              Submitted
+            </>
+          )}
+          {pub.status === 'working-paper' && (
+            <>
+              {pub.journal && ' | '}
+              Working paper
+            </>
+          )}
+          
+          {pub.links && (
+            <>
+              {(pub.journal || pub.status) && ' | '}
+              <PublicationLinks links={pub.links} />
+            </>
+          )}
+          
+          {pub.awards && (
+            <>
+              {(pub.journal || pub.status || pub.links) && ' | '}
+              <strong><em>{pub.awards.join(', ')}</em></strong>
+            </>
+          )}
+        </div>
+        
+        {/* Notes on separate line if present */}
         {pub.notes && (
-          <>
+          <div>
             {pub.notes}
-            <br/>
-          </>
+          </div>
         )}
-      </p>
+      </div>
     ))}
   </div>
 );
