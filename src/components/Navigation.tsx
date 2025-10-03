@@ -98,21 +98,21 @@ const NavigationKuang = () => {
               >
                 Home
               </Link>
-              <Link 
+              <Link
                 to="/research"
                 className="nav-link text-lg"
               >
                 Research
               </Link>
               <Link 
-                to="/#advising"
+                to="#advising"
                 onClick={() => handleNavClick('/', 'advising')}
                 className="nav-link text-lg"
               >
                 Advising
               </Link>
               <Link 
-                to="/#workshops"
+                to="#workshops"
                 onClick={() => handleNavClick('/', 'workshops')}
                 className="nav-link text-lg"
               >
@@ -200,7 +200,7 @@ const NavigationKuang = () => {
               >
                 Home
               </Link>
-              <Link 
+              <Link
                 to="/research"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
@@ -208,14 +208,14 @@ const NavigationKuang = () => {
                 Research
               </Link>
               <Link 
-                to="/#advising"
+                to="#advising"
                 onClick={() => handleNavClick('/', 'advising')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
                 Advising
               </Link>
               <Link 
-                to="/#workshops"
+                to="#workshops"
                 onClick={() => handleNavClick('/', 'workshops')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
