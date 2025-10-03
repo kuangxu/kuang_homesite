@@ -17,7 +17,6 @@ const App = () => {
         <Toaster />
         <Sonner />
         <HashRouter>
-          <RouteHandler />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/research" element={<Research />} />
