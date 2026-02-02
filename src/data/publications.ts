@@ -1,6 +1,7 @@
 import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry } from '../types/publications';
 
 export const workingPapers: PublicationEntry[] = [
+ 
   {
     title: "Behavioral Generative Agents for Energy Operations",
     titleUrl: "https://arxiv.org/abs/2506.12664",
@@ -18,7 +19,7 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Chao Qin" }
     ],
     status: "working-paper",
-    year: "2025",
+    year: "2026",
     links: [
       { label: "Extended Abstract", url: "https://drive.google.com/drive/folders/1yctHW8jdDNquE5Z2m6jOvUqr9imwwvh4?usp=drive_link", type: "other" }
     ]
@@ -31,7 +32,7 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Yue Hu" }
     ],
     status: "working-paper",
-    year: "2025"
+    year: "2026"
   },
   {
     title: "Experimenting under Stochastic Congestion",
@@ -65,6 +66,16 @@ export const workingPapers: PublicationEntry[] = [
     links: [
       { label: "Preliminary version, AISTATS 2023", url: "https://proceedings.mlr.press/v206/liu23e/liu23e.pdf", type: "preliminary" }
     ]
+  },
+  {
+    title: "Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets",
+    titleUrl: "https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf",
+    coAuthors: [
+      { name: "Alexander Kleiner" },
+      { name: "Omer Karaduman" }
+    ],
+    journal: "Technical Report, Stanford Graduate School of Business",
+    year: "2026"
   }
 ];
 
