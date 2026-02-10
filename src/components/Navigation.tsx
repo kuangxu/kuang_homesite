@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const NavigationKuang = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,14 +54,19 @@ const NavigationKuang = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleNavClick = (path: string, sectionId?: string) => {
+  const handleNavClick = (e: React.MouseEvent, path: string, sectionId?: string) => {
     setIsMobileMenuOpen(false);
     if (location.pathname !== path) {
-      // If navigating to a different page, let the router handle it
+      // Navigate to the page with state so we can scroll after load
+      if (sectionId) {
+        e.preventDefault();
+        navigate(path, { state: { scrollTo: sectionId } });
+      }
       return;
     }
     // If on the same page, scroll to section
     if (sectionId) {
+      e.preventDefault();
       scrollToSection(sectionId);
     }
   };
@@ -105,15 +111,15 @@ const NavigationKuang = () => {
                 Research
               </Link>
               <Link 
-                to="#advising"
-                onClick={() => handleNavClick('/', 'advising')}
+                to="/"
+                onClick={(e) => handleNavClick(e, '/', 'advising')}
                 className="nav-link text-lg"
               >
                 Advising
               </Link>
               <Link 
-                to="#workshops"
-                onClick={() => handleNavClick('/', 'workshops')}
+                to="/"
+                onClick={(e) => handleNavClick(e, '/', 'workshops')}
                 className="nav-link text-lg"
               >
                 Workshops and Consulting
@@ -195,7 +201,7 @@ const NavigationKuang = () => {
             <div className="flex-1 flex flex-col p-6 space-y-6">
               <Link 
                 to="/"
-                onClick={() => handleNavClick('/', 'hero')}
+                onClick={(e) => handleNavClick(e, '/', 'hero')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
                 Home
@@ -208,15 +214,15 @@ const NavigationKuang = () => {
                 Research
               </Link>
               <Link 
-                to="#advising"
-                onClick={() => handleNavClick('/', 'advising')}
+                to="/"
+                onClick={(e) => handleNavClick(e, '/', 'advising')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
                 Advising
               </Link>
               <Link 
-                to="#workshops"
-                onClick={() => handleNavClick('/', 'workshops')}
+                to="/"
+                onClick={(e) => handleNavClick(e, '/', 'workshops')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
                 Executive Workshops and Consulting

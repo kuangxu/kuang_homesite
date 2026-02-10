@@ -33,7 +33,7 @@ const ResearchSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Sidebar Navigation */}
-          <div className="lg:w-64 flex-shrink-0">
+          <div className="lg:w-64 flex-shrink-0 pt-20 lg:pt-24">
             <div className="sticky top-40">
               <nav className="space-y-2">
                 
@@ -92,7 +92,6 @@ const ResearchSection = () => {
               <p className="text-body text-muted-foreground">
                 I publish under the name <strong>Xu Kuang</strong>, cited as <strong>X. Kuang</strong>. Prior to June 2023, I published under the name <strong>Kuang Xu</strong>, cited as <strong>K. Xu</strong>.
               </p>
-              
               <div className="space-y-8">
                 <div id="working-papers">
                   <h3 className="text-subheading mb-4">Working Papers and Preprints</h3>

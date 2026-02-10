@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import AdvisingSection from '../components/AdvisingSection';
 import WorkshopsSection from '../components/WorkshopsSection';
 
 const Index = () => {
+  const location = useLocation();
+
   useEffect(() => {
     // Set page title and meta description for SEO
     document.title = 'Kuang Xu - Associate Professor of Operations Research at Stanford GSB';
@@ -26,23 +29,33 @@ const Index = () => {
       ogDescription.setAttribute('content', 'Associate Professor of Operations Research at Stanford Graduate School of Business. Expert in operations research, AI and data science innovation.');
     }
 
-    // Handle hash navigation (for links like /#advising)
-    const hash = window.location.hash;
-    if (hash) {
-      const sectionId = hash.replace('#', '');
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          const navHeight = 80;
-          const elementPosition = element.offsetTop - navHeight;
-          window.scrollTo({
-            top: elementPosition,
-            behavior: 'smooth'
-          });
+    const scrollToSection = (sectionId: string) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const navHeight = 80;
+        const elementPosition = element.offsetTop - navHeight;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    // Handle scroll from navigation state (e.g. from Research page)
+    const state = location.state as { scrollTo?: string } | null;
+    if (state?.scrollTo) {
+      setTimeout(() => scrollToSection(state.scrollTo!), 100);
+    } else {
+      // Handle hash navigation (for links like /#advising)
+      const hash = window.location.hash;
+      if (hash) {
+        const sectionId = hash.replace('#', '');
+        if (sectionId) {
+          setTimeout(() => scrollToSection(sectionId), 100);
         }
-      }, 100);
+      }
     }
-  }, []);
+  }, [location.state]);
 
   return (
     <div className="min-h-screen bg-background">
