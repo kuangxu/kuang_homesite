@@ -112,18 +112,14 @@ const HeroSectionKuang = () => {
           {/* Right Column - Bio */}
           <div className="flex-1 space-y-6 fade-in">
             <p className="text-body text-muted-foreground">
-              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. He is an expert in Operations Research, AI and Data Science innovation, supply chains and logistics, and data-driven decision-making. He is a Co-Creator of <a href="http://aistanford.org" target="_blank" rel="noopener" className="underline hover:text-foreground transition-colors"><em>AI and Data Science Strategy</em></a>, the first Stanford course focusing on the strategy, management and entrepreneurship of AI and Data Science. During 2024-2025, Kuang served as a Senior Staff Scientist at Uber, where he led efforts on Machine Learning and Agentic AI.  
+              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His <a href="#/research" className="underline hover:text-foreground transition-colors">research</a> develops cutting-edge AI and data-science systems for decision-making under uncertainty, with applications in agentic simulation, marketplace, supply chain and AI infrastructure.  During 2024-2025, Kuang served as a Senior Staff Scientist at Uber, where he led efforts on agentic simulation, Machine Learning and Causal Inference. He has also served as the Chief AI and Data Science Advisor for Shipt Inc., Senior Advisor to Uber Inc., and scientific advisors to a number of startups.  Kuang received his Ph.D. in Electrical Engineering and Computer Science from MIT and his Bachelor of Science degree from the University of Illinois at Urbana-Champaign. He is a native of Suzhou, China.
             </p>
             <p className="text-body text-muted-foreground">
-              Kuang's <a href="#/research" className="underline hover:text-foreground transition-colors">research</a> focuses on decision-making under uncertainty, leveraging tools from operations research, statistics and machine learning. His work has been published in leading academic journals including <em>Operations Research</em> and <em>Management Science</em>, and has received a number of prestigious awards, including the <em>George E. Nicholson Prize</em> from the <em>Institute for Operations Research and the Management Sciences (INFORMS)</em>, the Best Paper Award as well as Outstanding Student Paper Award from the <em>Association for Computing Machinery (ACM)</em>, <em>Special Interest Group on Measurement and Evaluation (SIGMETRICS)</em>, and an <em>ACM SIGMETRICS Rising Star Research Award</em>. He serves as an Associate Editor for <em>Management Science</em> and <em>Operations Research</em> in Data Science and Stochastic Modeling. His research and writing have been featured in a variety of media outlets including the <em>NPR</em>, <em>PBS</em>, <em>NBC</em> and <em>USA Today</em>.
-            </p>
-            <p className="text-body text-muted-foreground">
-              Kuang advises companies and investment funds on how to build core AI and Data Science capabilities and strategic moats. He has served as the Chief Data Science Advisor for Shipt Inc., Senior Advisor to Uber Inc., and scientific advisors to a number of startups.
-            </p>
-            <p className="text-body text-muted-foreground">
-              Kuang received his Ph.D. degree in Electrical Engineering and Computer Science from MIT (2014), and the Bachelor of Science degree from the University of Illinois at Urbana-Champaign (2009). He is a native of Suzhou, China.
-            </p>
 
+            Kuang's work has been featured in leading academic journals including *Operations Research* and *Management Science*, and has received a number of prestigious awards, including First Place in the George E. Nicholson Student Paper Competition from the Institute for Operations Research and the Management Sciences (INFORMS), the Best Paper Award as well as the Kenneth C. Sevcik Outstanding Student Paper Award from the Association for Computing Machinery (ACM) Special Interest Group on Measurement and Evaluation (SIGMETRICS), and the ACM SIGMETRICS Rising Star Research Award (2020). He has served as an Associate Editor for *Management Science* and *Operations Research*. He created <a href="http://aistanford.org" target="_blank" rel="noopener" className="underline hover:text-foreground transition-colors">*AI and Data Science Strategy*</a>, the first Stanford course focusing on the strategy, management, and entrepreneurship of AI and data science.
+
+            </p>
+            
             {/* Banner Image */}
             <div className="pt-4">
               <img 
