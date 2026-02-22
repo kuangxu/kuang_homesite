@@ -91,7 +91,7 @@ const NavigationKuang = () => {
               >
                 <span className="text-display text-4xl md:text-5xl tracking-wider font-bold">Kuang Xu</span>
                 <span className="text-lg md:text-xl text-muted-foreground font-normal tracking-normal normal-case mt-1">
-                  Associate Professor of Operations Research, Stanford GSB
+                  Associate Professor, Stanford Graduate School of Business
                 </span>
               </Link>
 

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A modern, minimalist website for Kuang Xu - Associate Professor of Operations Research at Stanford Graduate School of Business.
+A modern, minimalist website for Kuang Xu - Associate Professor at Stanford Graduate School of Business.
 
 ## Technologies Used
 

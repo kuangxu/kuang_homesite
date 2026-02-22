@@ -10,23 +10,23 @@ const Index = () => {
 
   useEffect(() => {
     // Set page title and meta description for SEO
-    document.title = 'Kuang Xu - Associate Professor of Operations Research at Stanford GSB';
+    document.title = 'Kuang Xu - Associate Professor at Stanford GSB';
     
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Kuang Xu is an Associate Professor of Operations Research at Stanford Graduate School of Business. Expert in operations research, AI and data science innovation, supply chains and logistics.');
+      metaDescription.setAttribute('content', 'Kuang Xu is an Associate Professor at Stanford Graduate School of Business. Expert in operations research, AI and data science innovation, supply chains and logistics.');
     }
     
     // Update Open Graph data
     let ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
-      ogTitle.setAttribute('content', 'Kuang Xu - Associate Professor of Operations Research at Stanford GSB');
+      ogTitle.setAttribute('content', 'Kuang Xu - Associate Professor at Stanford GSB');
     }
     
     let ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) {
-      ogDescription.setAttribute('content', 'Associate Professor of Operations Research at Stanford Graduate School of Business. Expert in operations research, AI and data science innovation.');
+      ogDescription.setAttribute('content', 'Associate Professor at Stanford Graduate School of Business. Expert in operations research, AI and data science innovation.');
     }
 
     const scrollToSection = (sectionId: string) => {
