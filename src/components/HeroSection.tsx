@@ -4,7 +4,7 @@ const HeroSectionKuang = () => {
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-start">
           {/* Left Column - Photo and Links */}
-          <div className="lg:w-96 flex-shrink-0">
+          <div className="lg:w-80 flex-shrink-0">
             <div className="fade-in w-[85%] mb-6">
               <img 
                 src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
@@ -122,13 +122,125 @@ const HeroSectionKuang = () => {
               and AI infrastructure. During 2024-2025, Kuang served as a Senior Staff Scientist
               at Uber, where he led efforts on agentic simulation, Machine Learning and Causal
               Inference. He has also served as the Chief AI and Data Science Advisor for Shipt
-              Inc., Senior Advisor to Uber Inc., and scientific advisor to a number of
-              startups. Kuang received his Ph.D. in Electrical Engineering and Computer Science
-              from MIT and his Bachelor of Science degree from the University of Illinois at
-              Urbana-Champaign. He is a native of Suzhou, China.
+              Inc., Senior Advisor to Uber Inc., and advisor to a number of
+              startups.
+            </p>
+
+            {/* Recent and Representative Work */}
+            <div className="pt-2">
+              <div className="flex items-baseline justify-between gap-4 flex-wrap">
+                <h2 className="text-body font-medium text-foreground">Recent and Representative Work</h2>
+                <a
+                  href="#/research"
+                  className="text-small text-muted-foreground hover:text-foreground transition-colors no-underline"
+                >
+                  See all research
+                </a>
+              </div>
+
+              <div className="mt-4 space-y-8">
+                <div>
+                  <h3 className="text-body font-medium text-foreground">AI Agents and Learning</h3>
+                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
+                    <li>
+                      <a
+                        href="https://arxiv.org/abs/2506.12664"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Behavioral Generative Agents for Energy Operations
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://arxiv.org/abs/2109.11647"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Treatment Effects in Market Equilibrium
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3844"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Experimenting in Equilibrium
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://arxiv.org/abs/2205.01970"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Nonstationary Bandit Learning via Predictive Sampling
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://arxiv.org/abs/2101.09855"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Weak Signal Asymptotics for Sequentially Randomized Experiments
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-body font-medium text-foreground">Resource Allocation and Supply Chain</h3>
+                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
+                    <li>
+                      <a
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/msom.2015.0573?journalCode=msom"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Using Future Information to Reduce Waiting Times in the Emergency Department via Diversion
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://vod.video.cornell.edu/media/ORIE+Colloquium+-+Kuang+Xu+(MIT)A+On+the+Power+of+(even+a+little)+Resource+Pooling+and+Flexibility/1_dzuj75fh#t=3:00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        On the power of (even a little) resource pooling
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-body text-muted-foreground pt-2">
+              <strong className="text-foreground">Biography.</strong> Kuang received his Ph.D.
+              in Electrical Engineering and Computer Science from MIT and his Bachelor of
+              Science degree from the University of Illinois at Urbana-Champaign. He is a
+              native of Suzhou, China.
             </p>
             <p className="text-body text-muted-foreground">
-              Kuang&apos;s work has been featured in leading academic journals including{" "}
+              His work has been featured in leading academic journals including{" "}
               <em>Operations Research</em> and <em>Management Science</em>, and has received a
               number of prestigious awards, including First Place in the George E. Nicholson
               Student Paper Competition from the Institute for Operations Research and the
