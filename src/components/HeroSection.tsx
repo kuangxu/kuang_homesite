@@ -119,7 +119,7 @@ const HeroSectionKuang = () => {
               </a>{" "}
               develops cutting-edge AI and data-science systems for decision-making under
               uncertainty, with applications in agentic simulation, marketplace, supply chain,
-              and AI infrastructure. During 2024-2025, Kuang served as a Senior Staff Scientist
+              and AI infrastructure. During 2024-2025, Professor Xu served as a Senior Staff Scientist
               at Uber, where he led efforts on agentic simulation, Machine Learning and Causal
               Inference. He has also served as the Chief AI and Data Science Advisor for Shipt
               Inc., Senior Advisor to Uber Inc., and advisor to a number of
@@ -234,7 +234,7 @@ const HeroSectionKuang = () => {
             </div>
 
             <p className="text-body text-muted-foreground pt-2">
-              <strong className="text-foreground">Biography</strong> Kuang received his Ph.D.
+              <strong className="text-foreground">Biography</strong> Kuang Xu received his Ph.D.
               in Electrical Engineering and Computer Science from MIT and his Bachelor of
               Science degree from the University of Illinois at Urbana-Champaign. He is a
               native of Suzhou, China.
