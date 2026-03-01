@@ -126,7 +126,7 @@ const HeroSectionKuang = () => {
               startups.
             </p>
 
-            {/* Recent and Representative Work */}
+            {/* Recent Work and Highlights */}
             <div className="pt-2">
               <div className="flex items-baseline justify-between gap-4 flex-wrap">
                 <h2 className="text-body font-medium text-foreground">Recent and Representative Work</h2>
@@ -134,7 +134,7 @@ const HeroSectionKuang = () => {
                   href="#/research"
                   className="text-small text-muted-foreground hover:text-foreground transition-colors no-underline"
                 >
-                  See all research
+                  All research
                 </a>
               </div>
 
@@ -234,7 +234,7 @@ const HeroSectionKuang = () => {
             </div>
 
             <p className="text-body text-muted-foreground pt-2">
-              <strong className="text-foreground">Biography.</strong> Kuang received his Ph.D.
+              <strong className="text-foreground">Biography</strong> Kuang received his Ph.D.
               in Electrical Engineering and Computer Science from MIT and his Bachelor of
               Science degree from the University of Illinois at Urbana-Champaign. He is a
               native of Suzhou, China.
