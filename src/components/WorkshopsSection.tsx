@@ -4,7 +4,7 @@ const WorkshopsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left spacer to match HeroSection layout */}
-          <div className="lg:w-96 flex-shrink-0"></div>
+          <div className="lg:w-80 flex-shrink-0"></div>
           
           {/* Right column content - matches Research page main content width */}
           <div className="flex-1 space-y-6">
@@ -74,4 +74,3 @@ const WorkshopsSection = () => {
 };
 
 export default WorkshopsSection;
-

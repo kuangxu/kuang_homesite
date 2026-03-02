@@ -121,15 +121,38 @@ const HeroSectionKuang = () => {
               uncertainty, with applications in agentic simulation, marketplace, supply chain,
               and AI infrastructure. During 2024-2025, Professor Xu served as a Senior Staff Scientist
               at Uber, where he led efforts on agentic simulation, Machine Learning and Causal
-              Inference. He has also served as the Chief AI and Data Science Advisor for Shipt
+              Inference. Kuang has also served as the Chief AI and Data Science Advisor for Shipt
               Inc., Senior Advisor to Uber Inc., and advisor to a number of
-              startups.
+              startups. 
+              </p>
+
+              <p className="text-body text-muted-foreground">
+              Kuang's work appears in leading
+              academic journals, including <em>Operations Research</em> and{" "}
+              <em>Management Science</em>, and has earned major honors: First Place in the
+              INFORMS George E. Nicholson Student Paper Competition; the ACM SIGMETRICS Best
+              Paper Award; the ACM SIGMETRICS Kenneth C. Sevcik Outstanding Student Paper
+              Award; and the ACM SIGMETRICS Rising Star Research Award (2020). Kuang has served
+              as an Associate Editor for <em>Management Science</em> and{" "}
+              <em>Operations Research</em>. Kuang also created{" "}
+              <a
+                href="http://aistanford.org"
+                target="_blank"
+                rel="noopener"
+                className="underline hover:text-foreground transition-colors"
+              >
+                <em>AI and Data Science Strategy</em>
+              </a>
+              , Stanford's first course on AI and data science strategy, management, and
+              entrepreneurship. Kuang received his Ph.D. in Electrical Engineering and Computer Science
+              from MIT and his Bachelor of Science degree from the University of Illinois at
+              Urbana-Champaign, and is a native of Suzhou, China. 
             </p>
 
             {/* Recent Work and Highlights */}
             <div className="pt-2">
-              <div className="flex items-baseline justify-between gap-4 flex-wrap">
-                <h2 className="text-body font-medium text-foreground">Recent and Representative Work</h2>
+              <div className="flex items-center justify-between gap-4 flex-wrap">
+                <h2 className="text-xl font-medium text-foreground">Recent and Representative Work</h2>
                 <a
                   href="#/research"
                   className="text-small text-muted-foreground hover:text-foreground transition-colors no-underline"
@@ -196,7 +219,7 @@ const HeroSectionKuang = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-body font-medium text-foreground">Resource Allocation and Supply Chain</h3>
+                  <h3 className="text-body font-medium text-foreground">Resource Allocation in Physical Economy</h3>
                   <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
                     <li>
                       <a
@@ -210,12 +233,12 @@ const HeroSectionKuang = () => {
                     </li>
                     <li>
                       <a
-                        href="https://vod.video.cornell.edu/media/ORIE+Colloquium+-+Kuang+Xu+(MIT)A+On+the+Power+of+(even+a+little)+Resource+Pooling+and+Flexibility/1_dzuj75fh#t=3:00"
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/11-SSY033"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="no-underline hover:text-foreground transition-colors"
                       >
-                        On the power of (even a little) resource pooling
+                        On the Power of (even a little) Resource Pooling
                       </a>
                     </li>
                     <li>
@@ -228,39 +251,30 @@ const HeroSectionKuang = () => {
                         Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="https://projecteuclid.org/euclid.aoap/1403812371"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Queueing with Future Information
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2017.1620?journalCode=opre"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Flexible Queueing Architectures
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-
-            <p className="text-body text-muted-foreground pt-2">
-              <strong className="text-foreground">Biography</strong> Kuang Xu received his Ph.D.
-              in Electrical Engineering and Computer Science from MIT and his Bachelor of
-              Science degree from the University of Illinois at Urbana-Champaign. He is a
-              native of Suzhou, China.
-            </p>
-            <p className="text-body text-muted-foreground">
-              His work has been featured in leading academic journals including{" "}
-              <em>Operations Research</em> and <em>Management Science</em>, and has received a
-              number of prestigious awards, including First Place in the George E. Nicholson
-              Student Paper Competition from the Institute for Operations Research and the
-              Management Sciences (INFORMS), the Best Paper Award as well as the Kenneth C.
-              Sevcik Outstanding Student Paper Award from the Association for Computing
-              Machinery (ACM) Special Interest Group on Measurement and Evaluation
-              (SIGMETRICS), and the ACM SIGMETRICS Rising Star Research Award (2020). He has
-              served as an Associate Editor for <em>Management Science</em> and{" "}
-              <em>Operations Research</em>. He created{" "}
-              <a
-                href="http://aistanford.org"
-                target="_blank"
-                rel="noopener"
-                className="underline hover:text-foreground transition-colors"
-              >
-                <em>AI and Data Science Strategy</em>
-              </a>
-              , the first Stanford course focusing on the strategy, management, and
-              entrepreneurship of AI and data science.
-            </p>
 
             {/* Banner Image */}
             <div className="pt-4">
