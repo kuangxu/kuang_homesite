@@ -42,8 +42,9 @@ export const workingPapers: PublicationEntry[] = [
       { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
-    status: "submitted",
-    year: "2025"
+    status: "forthcoming",
+    journal: "Management Science",
+    year: "2026"
   },
   {
     title: "Learning Service Slowdown using Observational Data",
