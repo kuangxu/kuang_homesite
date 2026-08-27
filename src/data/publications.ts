@@ -1,7 +1,49 @@
 import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry } from '../types/publications';
 
 export const workingPapers: PublicationEntry[] = [
- 
+  {
+    title: "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
+    titleUrl: "https://arxiv.org/abs/2608.12841",
+    coAuthors: [
+      { name: "Jiacheng Guo" },
+      { name: "Suozhi Huang" },
+      { name: "Yunlong Gao" },
+      { name: "Zihao Li" },
+      { name: "Jason Ge" },
+      { name: "Mengdi Wang" }
+    ],
+    status: "working-paper",
+    year: "2026"
+  },
+  {
+    title: "Agentic Laboratories of the Future: Towards World Models for Scientific Discovery",
+    titleUrl: "https://www.preprints.org/manuscript/202608.0213",
+    coAuthors: [
+      { name: "Kelsey Fu" },
+      { name: "Luna Lyu" },
+      { name: "Shuzhen Li" },
+      { name: "Suozhi Huang" }
+    ],
+    coAuthorsAbbreviated: true,
+    journal: "Preprints.org",
+    status: "working-paper",
+    year: "2026",
+    links: [
+      { label: "DOI", url: "https://doi.org/10.20944/preprints202608.0213.v1", type: "other" }
+    ]
+  },
+  {
+    title: "What is the Long-Term Value of Reliability?",
+    titleUrl: "https://arxiv.org/abs/2606.11526",
+    coAuthors: [
+      { name: "Chenyu Qiu" },
+      { name: "Inessa Liskovich" },
+      { name: "Ali Rauh" },
+      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
+    ],
+    status: "working-paper",
+    year: "2026"
+  },
   {
     title: "Behavioral Generative Agents for Energy Operations",
     titleUrl: "https://arxiv.org/abs/2506.12664",
@@ -25,28 +67,6 @@ export const workingPapers: PublicationEntry[] = [
     ]
   },
   {
-    title: "Prioritizing Recurrent Services",
-    titleUrl: "https://arxiv.org/abs/2509.11383",
-    coAuthors: [
-      { name: "Lin Franklin Feng" },
-      { name: "Yue Hu" }
-    ],
-    status: "working-paper",
-    year: "2026"
-  },
-  {
-    title: "Experimenting under Stochastic Congestion",
-    titleUrl: "https://arxiv.org/abs/2302.12093",
-    coAuthors: [
-      { name: "Shuangning Li", url: "https://lsn235711.github.io/" },
-      { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
-      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
-    ],
-    status: "forthcoming",
-    journal: "Management Science",
-    year: "2026"
-  },
-  {
     title: "Learning Service Slowdown using Observational Data",
     titleUrl: "https://arxiv.org/abs/2401.07305",
     coAuthors: [
@@ -56,17 +76,14 @@ export const workingPapers: PublicationEntry[] = [
     year: "2025"
   },
   {
-    title: "Nonstationary Bandit Learning via Predictive Sampling",
-    titleUrl: "https://arxiv.org/abs/2205.01970",
+    title: "Prioritizing Recurrent Services",
+    titleUrl: "https://arxiv.org/abs/2509.11383",
     coAuthors: [
-      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
-      { name: "Benjamin van Roy", url: "https://web.stanford.edu/~bvr/" }
+      { name: "Lin Franklin Feng" },
+      { name: "Yue Hu" }
     ],
-    status: "submitted",
-    year: "2025",
-    links: [
-      { label: "Preliminary version, AISTATS 2023", url: "https://proceedings.mlr.press/v206/liu23e/liu23e.pdf", type: "preliminary" }
-    ]
+    status: "working-paper",
+    year: "2025"
   },
   {
     title: "Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets",
@@ -82,25 +99,59 @@ export const workingPapers: PublicationEntry[] = [
 
 export const journalPublications: PublicationEntry[] = [
   {
+    title: "Experimenting under Stochastic Congestion",
+    titleUrl: "https://arxiv.org/abs/2302.12093",
+    coAuthors: [
+      { name: "Shuangning Li", url: "https://lsn235711.github.io/" },
+      { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
+      { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
+    ],
+    status: "forthcoming",
+    journal: "Management Science",
+    year: "2026"
+  },
+  {
+    title: "Non-Stationary Bandit Learning via Predictive Sampling",
+    titleUrl: "https://arxiv.org/abs/2205.01970",
+    coAuthors: [
+      { name: "Yueyang Liu", url: "https://yuey7x.github.io/" },
+      { name: "Benjamin Van Roy", url: "https://web.stanford.edu/~bvr/" }
+    ],
+    status: "forthcoming",
+    journal: "Management Science",
+    year: "2026",
+    links: [
+      { label: "Preliminary version, AISTATS 2023", url: "https://proceedings.mlr.press/v206/liu23e/liu23e.pdf", type: "preliminary" }
+    ]
+  },
+  {
     title: "Treatment Effects in Market Equilibrium",
-    titleUrl: "https://arxiv.org/abs/2109.11647",
+    titleUrl: "https://www.aeaweb.org/articles?id=10.1257/aer.20230039",
     coAuthors: [
       { name: "Evan Munro", url: "https://www.evanmunro.ca/" },
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
     journal: "American Economic Review",
     year: "2025",
-    status: "forthcoming"
+    volume: "115(10)",
+    pages: "3273–3321",
+    links: [
+      { label: "arXiv version", url: "https://arxiv.org/abs/2109.11647", type: "arxiv" }
+    ]
   },
   {
     title: "Load Balancing Using Sparse Communication",
-    titleUrl: "https://arxiv.org/pdf/2206.02410",
+    titleUrl: "https://pubsonline.informs.org/doi/10.1287/opre.2022.0359",
     coAuthors: [
       { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
     ],
     journal: "Operations Research",
     year: "2025",
-    status: "forthcoming"
+    volume: "74(2)",
+    pages: "1026–1046",
+    links: [
+      { label: "arXiv version", url: "https://arxiv.org/abs/2206.02410", type: "arxiv" }
+    ]
   },
   {
     title: "Weak Signal Asymptotics for Sequentially Randomized Experiments",

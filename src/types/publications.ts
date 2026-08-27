@@ -2,6 +2,7 @@ export interface PublicationEntry {
   title: string;
   titleUrl?: string;
   coAuthors?: CoAuthor[];
+  coAuthorsAbbreviated?: boolean;
   journal?: string;
   year?: string;
   volume?: string;

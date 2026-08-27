@@ -1,4 +1,12 @@
-import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry } from '../types/publications';
+import {
+  PublicationEntry,
+  ConferenceEntry,
+  ThesisEntry,
+  MediaEntry,
+  TalkEntry,
+  CoAuthor,
+  PublicationLink
+} from '../types/publications';
 
 interface PublicationListProps {
   publications: PublicationEntry[];
@@ -20,7 +28,13 @@ interface TalkListProps {
   talks: TalkEntry[];
 }
 
-const CoAuthorsList = ({ coAuthors }: { coAuthors: any[] }) => (
+const CoAuthorsList = ({
+  coAuthors,
+  abbreviated = false
+}: {
+  coAuthors: CoAuthor[];
+  abbreviated?: boolean;
+}) => (
   <>
     {coAuthors.map((author, index) => (
       <span key={index}>
@@ -34,10 +48,11 @@ const CoAuthorsList = ({ coAuthors }: { coAuthors: any[] }) => (
         {index < coAuthors.length - 1 && ', '}
       </span>
     ))}
+    {abbreviated && ', et al.'}
   </>
 );
 
-const PublicationLinks = ({ links }: { links: any[] }) => (
+const PublicationLinks = ({ links }: { links: PublicationLink[] }) => (
   <>
     {links.map((link, index) => (
       <span key={index}>
@@ -70,7 +85,7 @@ export const PublicationList = ({ publications }: PublicationListProps) => (
         {/* Second row: Co-authors */}
         {pub.coAuthors && (
           <div>
-            Co-authored with: <CoAuthorsList coAuthors={pub.coAuthors} />
+            Co-authored with: <CoAuthorsList coAuthors={pub.coAuthors} abbreviated={pub.coAuthorsAbbreviated} />
           </div>
         )}
         

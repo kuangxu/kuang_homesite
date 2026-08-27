@@ -112,29 +112,22 @@ const HeroSectionKuang = () => {
           {/* Right Column - Bio */}
           <div className="flex-1 space-y-6 fade-in">
             <p className="text-body text-muted-foreground">
-              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate
-              School of Business. His{" "}
-              <a href="#/research" className="underline hover:text-foreground transition-colors">
-                research
-              </a>{" "}
-              develops cutting-edge AI and data-science systems for decision-making under
-              uncertainty, with applications in agentic simulation, marketplace, supply chain,
-              and AI infrastructure. During 2024-2025, Professor Xu served as a Senior Staff Scientist
-              at Uber, where he led efforts on agentic simulation, Machine Learning and Causal
-              Inference. Kuang has also served as the Chief AI and Data Science Advisor for Shipt
-              Inc., Senior Advisor to Uber Inc., and advisor to a number of
-              startups. 
-              </p>
+              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His
+              research develops cutting-edge AI and decision technologies for complex physical and economic systems, with
+              applications spanning agentic AI, marketplaces, scientific discovery, and advanced R&amp;D and manufacturing.
+              Professor Xu previously
+              served as a Senior Staff Scientist at Uber, where he led work on agentic system design, machine learning,
+              and causal inference. He has also served as Chief AI and Data Science Advisor to Shipt Inc., Senior Advisor
+              to Uber Inc., and advisor to a number of startups.
+            </p>
 
-              <p className="text-body text-muted-foreground">
-              Kuang's work appears in leading
-              academic journals, including <em>Operations Research</em> and{" "}
-              <em>Management Science</em>, and has earned major honors: First Place in the
-              INFORMS George E. Nicholson Student Paper Competition; the ACM SIGMETRICS Best
-              Paper Award; the ACM SIGMETRICS Kenneth C. Sevcik Outstanding Student Paper
-              Award; and the ACM SIGMETRICS Rising Star Research Award (2020). Kuang has served
-              as an Associate Editor for <em>Management Science</em> and{" "}
-              <em>Operations Research</em>. Kuang also created{" "}
+            <p className="text-body text-muted-foreground">
+              Professor Xu’s work has appeared in leading scientific journals, including <em>Operations Research</em>,{" "}
+              <em>Management Science</em>, and the <em>American Economic Review</em>. He has received major honors from
+              INFORMS and ACM SIGMETRICS, including First Place in the INFORMS George E. Nicholson Student Paper
+              Competition, the ACM SIGMETRICS Best Paper Award, and the ACM SIGMETRICS Rising Star Research Award. He
+              has served as an Associate Editor for <em>Management Science</em> and <em>Operations Research</em>. Professor
+              Xu also created{" "}
               <a
                 href="http://aistanford.org"
                 target="_blank"
@@ -143,10 +136,9 @@ const HeroSectionKuang = () => {
               >
                 <em>AI and Data Science Strategy</em>
               </a>
-              , Stanford's first course on AI and data science strategy, management, and
-              entrepreneurship. Kuang received his Ph.D. in Electrical Engineering and Computer Science
-              from MIT and his Bachelor of Science degree from the University of Illinois at
-              Urbana-Champaign, and is a native of Suzhou, China. 
+              , Stanford’s first course focused on AI and data science strategy, management, and entrepreneurship. He
+              received his Ph.D. in Electrical Engineering and Computer Science from MIT and his B.S. from the University
+              of Illinois at Urbana-Champaign. Professor Xu is a native of Suzhou, China.
             </p>
 
             {/* Recent Work and Highlights */}
@@ -163,8 +155,74 @@ const HeroSectionKuang = () => {
 
               <div className="mt-4 space-y-8">
                 <div>
+                  <h3 className="text-body font-medium text-foreground">AI and Data for Physical Economy</h3>
+                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
+                    <li>
+                      <a
+                        href="https://www.preprints.org/manuscript/202608.0213"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Agentic Laboratories of the Future: Towards World Models for Scientific Discovery
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/msom.2015.0573?journalCode=msom"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Using Future Information to Reduce Waiting Times in the Emergency Department via Diversion
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://projecteuclid.org/euclid.aoap/1403812371"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Queueing with Future Information
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2017.1620?journalCode=opre"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        Flexible Queueing Architectures
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
                   <h3 className="text-body font-medium text-foreground">AI Agents and Learning</h3>
                   <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
+                    <li>
+                      <a
+                        href="https://arxiv.org/abs/2606.11526"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline hover:text-foreground transition-colors"
+                      >
+                        What is the Long-Term Value of Reliability?
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="https://arxiv.org/abs/2506.12664"
@@ -213,62 +271,6 @@ const HeroSectionKuang = () => {
                         className="no-underline hover:text-foreground transition-colors"
                       >
                         Weak Signal Asymptotics for Sequentially Randomized Experiments
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-body font-medium text-foreground">Resource Allocation in Physical Economy</h3>
-                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/msom.2015.0573?journalCode=msom"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Using Future Information to Reduce Waiting Times in the Emergency Department via Diversion
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/11-SSY033"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        On the Power of (even a little) Resource Pooling
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://projecteuclid.org/euclid.aoap/1403812371"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Queueing with Future Information
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2017.1620?journalCode=opre"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Flexible Queueing Architectures
                       </a>
                     </li>
                   </ul>
