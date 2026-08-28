@@ -115,6 +115,8 @@ const HeroSectionKuang = () => {
               Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His
               research develops cutting-edge AI and decision technologies for complex physical and economic systems, with
               applications spanning agentic AI, marketplaces, scientific discovery, and advanced R&amp;D and manufacturing.
+              His recent research focuses on building foundation models and world models for macroscopic physical and
+              economic systems, with applications to AI-powered advanced engineering systems and AI supply chains.
               Professor Xu previously
               served as a Senior Staff Scientist at Uber, where he led work on agentic system design, machine learning,
               and causal inference. He has also served as Chief AI and Data Science Advisor to Shipt Inc., Senior Advisor
