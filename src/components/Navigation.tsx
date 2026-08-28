@@ -122,7 +122,7 @@ const NavigationKuang = () => {
                 onClick={(e) => handleNavClick(e, '/', 'workshops')}
                 className="nav-link text-lg"
               >
-                Workshops and Consulting
+                Leadership Advisory
               </Link>
             </div>
 
@@ -225,7 +225,7 @@ const NavigationKuang = () => {
                 onClick={(e) => handleNavClick(e, '/', 'workshops')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
-                Executive Workshops and Consulting
+                Leadership Advisory
               </Link>
             </div>
 
