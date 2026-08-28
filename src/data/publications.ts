@@ -55,18 +55,6 @@ export const workingPapers: PublicationEntry[] = [
     year: "2025"
   },
   {
-    title: "Shortlist Experiments",
-    titleUrl: "https://drive.google.com/drive/folders/1yctHW8jdDNquE5Z2m6jOvUqr9imwwvh4?usp=drive_link",
-    coAuthors: [
-      { name: "Chao Qin" }
-    ],
-    status: "working-paper",
-    year: "2026",
-    links: [
-      { label: "Extended Abstract", url: "https://drive.google.com/drive/folders/1yctHW8jdDNquE5Z2m6jOvUqr9imwwvh4?usp=drive_link", type: "other" }
-    ]
-  },
-  {
     title: "Learning Service Slowdown using Observational Data",
     titleUrl: "https://arxiv.org/abs/2401.07305",
     coAuthors: [
