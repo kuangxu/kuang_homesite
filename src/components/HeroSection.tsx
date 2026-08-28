@@ -111,7 +111,7 @@ const HeroSectionKuang = () => {
 
           {/* Right Column - Bio */}
           <div className="flex-1 space-y-6 fade-in">
-            <p className="text-body text-muted-foreground">
+            <p className="text-body text-muted-foreground max-w-[78ch]">
               Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His
               research develops cutting-edge AI and decision technologies for complex physical and economic systems, with
               applications spanning agentic AI, marketplaces, scientific discovery, and advanced R&amp;D and manufacturing.
@@ -121,7 +121,7 @@ const HeroSectionKuang = () => {
               to Uber Inc., and advisor to a number of startups.
             </p>
 
-            <p className="text-body text-muted-foreground">
+            <p className="text-body text-muted-foreground max-w-[78ch]">
               Professor Xu’s work has appeared in leading scientific journals, including <em>Operations Research</em>,{" "}
               <em>Management Science</em>, and the <em>American Economic Review</em>. He has received major honors from
               INFORMS and ACM SIGMETRICS, including First Place in the INFORMS George E. Nicholson Student Paper

@@ -96,7 +96,7 @@ const NavigationKuang = () => {
               </Link>
 
               {/* Navigation Links */}
-              <div className="hidden md:flex space-x-8 pb-1">
+              <div className="hidden lg:flex space-x-8 pb-1">
               <Link 
                 to="/"
                 onClick={() => location.pathname === '/' && scrollToSection('hero')}
@@ -128,7 +128,7 @@ const NavigationKuang = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden btn-clean mobile-menu-button p-2 -mr-2"
+              className="lg:hidden btn-clean mobile-menu-button p-2 -mr-2"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
@@ -169,7 +169,7 @@ const NavigationKuang = () => {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-[100] md:hidden transition-opacity duration-300 ${
+      <div className={`fixed inset-0 z-[100] lg:hidden transition-opacity duration-300 ${
         isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}>
         {/* Backdrop */}
@@ -232,7 +232,7 @@ const NavigationKuang = () => {
             {/* Menu Footer */}
             <div className="p-6">
               <div className="text-sm text-gray-500">
-                © 2025 Kuang Xu
+                © 2026 Kuang Xu
               </div>
             </div>
           </div>

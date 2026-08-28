@@ -8,7 +8,7 @@ const AdvisingSection = () => {
           
           {/* Right column content - matches Research page main content width */}
           <div className="flex-1 space-y-6">
-            <div className="text-left mb-16">
+            <div className="text-left mb-10">
               <h2 className="text-heading mb-6">Advising</h2>
             </div>
             
