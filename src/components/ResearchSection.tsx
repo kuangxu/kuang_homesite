@@ -47,7 +47,7 @@ const ResearchSection = () => {
                   onClick={() => scrollToSection('journal-publications')}
                   className="block w-full text-left text-base text-muted-foreground hover:text-foreground transition-colors py-2"
                 >
-                  Journal Publications
+                  Journal Publications and Technical Reports
                 </button>
                 <button
                   onClick={() => scrollToSection('conference-publications')}
@@ -99,7 +99,7 @@ const ResearchSection = () => {
                 </div>
 
                 <div id="journal-publications">
-                  <h3 className="text-subheading mb-4">Journal Publications</h3>
+                  <h3 className="text-subheading mb-4">Journal Publications and Technical Reports</h3>
                   <PublicationList publications={journalPublications} />
                 </div>
 

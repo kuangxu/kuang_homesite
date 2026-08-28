@@ -72,8 +72,8 @@ export const workingPapers: PublicationEntry[] = [
     coAuthors: [
       { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
     ],
-    status: "submitted",
-    year: "2025"
+    journal: "R&R with Stochastic Systems",
+    year: "2026"
   },
   {
     title: "Prioritizing Recurrent Services",
@@ -84,7 +84,10 @@ export const workingPapers: PublicationEntry[] = [
     ],
     status: "working-paper",
     year: "2025"
-  },
+  }
+];
+
+export const journalPublications: PublicationEntry[] = [
   {
     title: "Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets",
     titleUrl: "https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf",
@@ -94,10 +97,7 @@ export const workingPapers: PublicationEntry[] = [
     ],
     journal: "Technical Report, Stanford Graduate School of Business",
     year: "2026"
-  }
-];
-
-export const journalPublications: PublicationEntry[] = [
+  },
   {
     title: "Experimenting under Stochastic Congestion",
     titleUrl: "https://arxiv.org/abs/2302.12093",
