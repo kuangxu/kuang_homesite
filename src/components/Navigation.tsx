@@ -68,6 +68,9 @@ const NavigationKuang = () => {
     if (sectionId) {
       e.preventDefault();
       scrollToSection(sectionId);
+    } else {
+      e.preventDefault();
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
   };
 
@@ -87,6 +90,7 @@ const NavigationKuang = () => {
               {/* Logo */}
               <Link 
                 to="/"
+                onClick={(e) => handleNavClick(e, '/')}
                 className="btn-clean flex flex-col pt-4"
               >
                 <span className="text-display text-4xl md:text-5xl tracking-wider font-bold">Kuang Xu</span>
@@ -99,13 +103,14 @@ const NavigationKuang = () => {
               <div className="hidden lg:flex space-x-8 pb-1">
               <Link 
                 to="/"
-                onClick={() => location.pathname === '/' && scrollToSection('hero')}
+                onClick={(e) => handleNavClick(e, '/', 'hero')}
                 className="nav-link text-lg"
               >
                 Home
               </Link>
               <Link
                 to="/research"
+                onClick={(e) => handleNavClick(e, '/research')}
                 className="nav-link text-lg"
               >
                 Research
@@ -208,7 +213,7 @@ const NavigationKuang = () => {
               </Link>
               <Link
                 to="/research"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, '/research')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
                 Research

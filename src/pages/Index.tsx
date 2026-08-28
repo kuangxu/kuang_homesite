@@ -46,14 +46,7 @@ const Index = () => {
     if (state?.scrollTo) {
       setTimeout(() => scrollToSection(state.scrollTo!), 100);
     } else {
-      // Handle hash navigation (for links like /#advising)
-      const hash = window.location.hash;
-      if (hash) {
-        const sectionId = hash.replace('#', '');
-        if (sectionId) {
-          setTimeout(() => scrollToSection(sectionId), 100);
-        }
-      }
+      window.scrollTo(0, 0);
     }
   }, [location.state]);
 
