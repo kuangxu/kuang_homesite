@@ -81,51 +81,57 @@ const NavigationKuang = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-md' : 'bg-transparent'
+      <nav className={`fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-xl transition-all duration-300 ${
+        isScrolled ? 'bg-background/95 shadow-[0_8px_30px_rgba(0,0,0,0.035)]' : ''
       }`}>
         <div className="section-padding">
           <div className="max-w-7xl mx-auto">
-            <div className="flex justify-between items-end py-6">
-              {/* Logo */}
+            <div className="flex justify-between items-end py-4">
               <Link 
                 to="/"
                 onClick={(e) => handleNavClick(e, '/')}
-                className="btn-clean flex flex-col pt-4"
+                className="btn-clean flex min-w-0 flex-col"
               >
-                <span className="text-display text-4xl md:text-5xl tracking-wider font-bold">Kuang Xu</span>
-                <span className="text-lg md:text-xl text-muted-foreground font-normal tracking-normal normal-case mt-1">
+                <span className="text-display text-3xl md:text-4xl">Kuang Xu</span>
+                <span className="mt-0.5 block max-w-[calc(100vw-7rem)] truncate text-left text-sm font-normal normal-case tracking-normal text-muted-foreground md:max-w-none md:text-base">
                   Associate Professor, Stanford Graduate School of Business
                 </span>
               </Link>
 
               {/* Navigation Links */}
-              <div className="hidden lg:flex space-x-8 pb-1">
+              <div className="hidden xl:flex space-x-6 pb-1">
               <Link 
                 to="/"
                 onClick={(e) => handleNavClick(e, '/', 'hero')}
-                className="nav-link text-lg"
+                className="nav-link"
               >
                 Home
               </Link>
               <Link
+                to="/highlights"
+                onClick={(e) => handleNavClick(e, '/highlights')}
+                className="nav-link"
+              >
+                Highlights
+              </Link>
+              <Link
                 to="/research"
                 onClick={(e) => handleNavClick(e, '/research')}
-                className="nav-link text-lg"
+                className="nav-link"
               >
                 Research
               </Link>
               <Link 
                 to="/"
-                onClick={(e) => handleNavClick(e, '/', 'advising')}
-                className="nav-link text-lg"
+                onClick={(e) => handleNavClick(e, '/', 'research-team')}
+                className="nav-link"
               >
-                Advising
+                Research Team
               </Link>
               <Link 
                 to="/"
                 onClick={(e) => handleNavClick(e, '/', 'workshops')}
-                className="nav-link text-lg"
+                className="nav-link"
               >
                 Leadership Advisory
               </Link>
@@ -133,7 +139,7 @@ const NavigationKuang = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="lg:hidden btn-clean mobile-menu-button p-2 -mr-2"
+              className="xl:hidden btn-clean mobile-menu-button p-2 -mr-2"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
@@ -168,13 +174,14 @@ const NavigationKuang = () => {
                 />
               </svg>
             </button>
+
           </div>
           </div>
         </div>
       </nav>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 z-[100] lg:hidden transition-opacity duration-300 ${
+      <div className={`fixed inset-0 z-[100] xl:hidden transition-opacity duration-300 ${
         isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}>
         {/* Backdrop */}
@@ -212,6 +219,13 @@ const NavigationKuang = () => {
                 Home
               </Link>
               <Link
+                to="/highlights"
+                onClick={(e) => handleNavClick(e, '/highlights')}
+                className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
+              >
+                Highlights
+              </Link>
+              <Link
                 to="/research"
                 onClick={(e) => handleNavClick(e, '/research')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
@@ -220,10 +234,10 @@ const NavigationKuang = () => {
               </Link>
               <Link 
                 to="/"
-                onClick={(e) => handleNavClick(e, '/', 'advising')}
+                onClick={(e) => handleNavClick(e, '/', 'research-team')}
                 className="text-left text-lg font-semibold py-3 text-black hover:text-primary transition-colors"
               >
-                Advising
+                Research Team
               </Link>
               <Link 
                 to="/"

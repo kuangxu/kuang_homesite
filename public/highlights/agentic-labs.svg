@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic laboratory world-model architecture</title>
+  <desc id="desc">A conceptual diagram connects human judgment, computational models, and physical laboratory systems through an agentic harnessing layer and shared laboratory world model.</desc>
+  <rect width="1200" height="760" fill="#f7f7f4"/>
+
+  <text x="72" y="74" fill="#1d1d1d" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="600">A shared world model for scientific discovery</text>
+  <text x="72" y="108" fill="#6d6d68" font-family="Helvetica, Arial, sans-serif" font-size="17">Human, model, and physical intelligence in a coordinated experimental loop</text>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="70" y="188" width="260" height="142" rx="8" fill="#f0c970"/>
+    <text x="98" y="230" fill="#1e1e1c" font-size="15" font-weight="700" letter-spacing="2">HUMAN</text>
+    <text x="98" y="270" fill="#1e1e1c" font-size="22">Goals · judgment</text>
+    <text x="98" y="301" fill="#1e1e1c" font-size="22">interpretation</text>
+
+    <rect x="870" y="188" width="260" height="142" rx="8" fill="#8db7dc"/>
+    <text x="898" y="230" fill="#172432" font-size="15" font-weight="700" letter-spacing="2">MODELS</text>
+    <text x="898" y="270" fill="#172432" font-size="22">Reasoning · prediction</text>
+    <text x="898" y="301" fill="#172432" font-size="22">simulation</text>
+
+    <rect x="870" y="472" width="260" height="142" rx="8" fill="#82bda9"/>
+    <text x="898" y="514" fill="#15342b" font-size="15" font-weight="700" letter-spacing="2">PHYSICAL</text>
+    <text x="898" y="554" fill="#15342b" font-size="22">Robotics · instruments</text>
+    <text x="898" y="585" fill="#15342b" font-size="22">observations</text>
+
+    <rect x="70" y="472" width="260" height="142" rx="8" fill="#dca29d"/>
+    <text x="98" y="514" fill="#42201d" font-size="15" font-weight="700" letter-spacing="2">EVIDENCE</text>
+    <text x="98" y="554" fill="#42201d" font-size="22">Literature · data</text>
+    <text x="98" y="585" fill="#42201d" font-size="22">uncertainty</text>
+
+    <circle cx="600" cy="402" r="168" fill="#fff" stroke="#252525" stroke-width="2"/>
+    <text x="600" y="342" text-anchor="middle" fill="#6b6b66" font-size="15" font-weight="700" letter-spacing="2">AGENTIC HARNESSING LAYER</text>
+    <text x="600" y="394" text-anchor="middle" fill="#171717" font-size="31" font-weight="600">Laboratory</text>
+    <text x="600" y="432" text-anchor="middle" fill="#171717" font-size="31" font-weight="600">world model</text>
+    <text x="600" y="474" text-anchor="middle" fill="#6b6b66" font-size="18">plan · act · observe · update</text>
+  </g>
+
+  <g fill="none" stroke="#454545" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M330 259 C420 259 424 306 458 326"/>
+    <path d="M870 259 C780 259 776 306 742 326"/>
+    <path d="M870 543 C780 543 776 496 742 478"/>
+    <path d="M330 543 C420 543 424 496 458 478"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#454545"/>
+    </marker>
+  </defs>
+</svg>

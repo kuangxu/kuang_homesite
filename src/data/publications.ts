@@ -60,7 +60,7 @@ export const workingPapers: PublicationEntry[] = [
     coAuthors: [
       { name: "Gal Mendelson", url: "https://dds.technion.ac.il/academicstaff/mendelson-gal/" }
     ],
-    journal: "R&R with Stochastic Systems",
+    status: "working-paper",
     year: "2026"
   },
   {

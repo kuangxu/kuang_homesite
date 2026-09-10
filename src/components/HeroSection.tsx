@@ -1,15 +1,72 @@
+const featuredWorks = [
+  {
+    title: 'Agentic Laboratories of the Future',
+    publication: 'Preprint · 2026',
+    href: 'https://www.preprints.org/manuscript/202608.0213',
+    image: '/highlights/agentic-labs.svg',
+  },
+  {
+    title: 'What Is the Long-Term Value of Reliability?',
+    publication: 'Preprint · 2026',
+    href: 'https://arxiv.org/abs/2606.11526',
+    image: '/highlights/long-term-reliability-figure.jpg',
+  },
+  {
+    title: 'Behavioral Generative Agents for Energy Operations',
+    publication: 'Preprint · 2025',
+    href: 'https://arxiv.org/abs/2506.12664',
+    image: '/highlights/energy-agents-figure.jpg',
+  },
+  {
+    title: 'Experimenting under Stochastic Congestion',
+    publication: 'Preprint · 2026',
+    href: 'https://arxiv.org/abs/2302.12093',
+    image: '/highlights/stochastic-congestion-figure.png',
+  },
+  {
+    title: 'Non-Stationary Bandit Learning via Predictive Sampling',
+    publication: 'Preprint · 2026',
+    href: 'https://arxiv.org/abs/2205.01970',
+    image: '/highlights/predictive-sampling-figure.jpg',
+  },
+  {
+    title: 'Treatment Effects in Market Equilibrium',
+    publication: 'American Economic Review · 2025',
+    href: 'https://www.aeaweb.org/articles?id=10.1257/aer.20230039',
+    image: '/highlights/market-equilibrium-figure.jpg',
+  },
+  {
+    title: 'Load Balancing Using Sparse Communication',
+    publication: 'Operations Research · 2025',
+    href: 'https://pubsonline.informs.org/doi/10.1287/opre.2022.0359',
+    image: '/highlights/sparse-communication-figure.jpg',
+  },
+  {
+    title: 'AQuA: Recursively Self-Improving Quantitative Trading Research Agents',
+    publication: 'Preprint · 2026',
+    href: 'https://arxiv.org/abs/2608.12841',
+    image: '/highlights/aqua-figure.png',
+  },
+  {
+    title: 'Weak Signal Asymptotics for Sequentially Randomized Experiments',
+    publication: 'Management Science · 2024',
+    href: 'https://arxiv.org/abs/2101.09855',
+    image: '/highlights/weak-signals-figure.png',
+  },
+];
+
 const HeroSectionKuang = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center section-padding pt-48 pb-32 md:py-40">
+    <section id="hero" className="section-padding pt-32 pb-20 md:pt-36 md:pb-28">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-20 items-start">
           {/* Left Column - Photo and Links */}
-          <div className="lg:w-80 flex-shrink-0">
-            <div className="fade-in w-[85%] mb-6">
+          <aside className="w-full lg:w-72 xl:w-80 flex-shrink-0 lg:sticky lg:top-32">
+            <div className="fade-in w-full max-w-[18rem] mb-7">
               <img 
                 src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
                 alt="Kuang Xu" 
-                className="w-full aspect-square object-cover rounded-md"
+                className="w-full aspect-square object-cover rounded-sm"
               />
             </div>
             
@@ -106,12 +163,25 @@ const HeroSectionKuang = () => {
                 </svg>
                 Stanford GSB Faculty Profile
               </a>
+              <a
+                href="https://www.gsb.stanford.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-48 max-w-[75%] pt-5"
+                aria-label="Stanford Graduate School of Business"
+              >
+                <img
+                  src="https://www.gsb.stanford.edu/themes/custom/gsb/logo.svg"
+                  alt="Stanford Graduate School of Business"
+                  className="block w-full h-auto"
+                />
+              </a>
             </div>
-          </div>
+          </aside>
 
           {/* Right Column - Bio */}
           <div className="flex-1 space-y-6 fade-in">
-            <p className="text-body text-muted-foreground max-w-[78ch]">
+            <p className="text-body text-muted-foreground">
               Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His
               research develops cutting-edge AI and decision technologies for complex physical and economic systems, with
               applications spanning agentic AI, marketplaces, scientific discovery, and advanced R&amp;D and manufacturing.
@@ -123,7 +193,7 @@ const HeroSectionKuang = () => {
               to Uber Inc., and advisor to a number of startups.
             </p>
 
-            <p className="text-body text-muted-foreground max-w-[78ch]">
+            <p className="text-body text-muted-foreground">
               Professor Xu’s work has appeared in leading scientific journals, including <em>Operations Research</em>,{" "}
               <em>Management Science</em>, and the <em>American Economic Review</em>. He has received major honors from
               INFORMS and ACM SIGMETRICS, including First Place in the INFORMS George E. Nicholson Student Paper
@@ -143,151 +213,50 @@ const HeroSectionKuang = () => {
               of Illinois at Urbana-Champaign. Professor Xu is a native of Suzhou, China.
             </p>
 
-            {/* Recent Work and Highlights */}
-            <div className="pt-2">
+            {/* Recent work */}
+            <div className="pt-4">
               <div className="flex items-center justify-between gap-4 flex-wrap">
-                <h2 className="text-xl font-medium text-foreground">Recent and Representative Work</h2>
+                <h2 className="text-xl font-medium text-foreground">Recent work</h2>
                 <a
-                  href="#/research"
+                  href="#/highlights"
                   className="text-small text-muted-foreground hover:text-foreground transition-colors no-underline"
                 >
-                  All research
+                  All highlights
                 </a>
               </div>
 
-              <div className="mt-4 space-y-8">
-                <div>
-                  <h3 className="text-body font-medium text-foreground">AI and Data for Physical Economy</h3>
-                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
-                    <li>
-                      <a
-                        href="https://www.preprints.org/manuscript/202608.0213"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Agentic Laboratories of the Future: Towards World Models for Scientific Discovery
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/msom.2015.0573?journalCode=msom"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Using Future Information to Reduce Waiting Times in the Emergency Department via Diversion
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://web.stanford.edu/~kuangxu/papers/BatterySuppChain24/Where%20Are%20Lithium-Ion%20Batteries%20Cheapest%20to%20Manufacture_%20Insights%20from%20Four%20Major%20Markets.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Where Are Lithium-Ion Batteries Cheapest to Manufacture? Insights from Four Major Markets
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://projecteuclid.org/euclid.aoap/1403812371"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Queueing with Future Information
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2017.1620?journalCode=opre"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Flexible Queueing Architectures
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-body font-medium text-foreground">AI Agents and Learning</h3>
-                  <ul className="mt-3 list-disc pl-5 space-y-2 text-body text-muted-foreground">
-                    <li>
-                      <a
-                        href="https://arxiv.org/abs/2606.11526"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        What is the Long-Term Value of Reliability?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://arxiv.org/abs/2506.12664"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Behavioral Generative Agents for Energy Operations
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://arxiv.org/abs/2109.11647"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Treatment Effects in Market Equilibrium
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3844"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Experimenting in Equilibrium
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://arxiv.org/abs/2205.01970"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Nonstationary Bandit Learning via Predictive Sampling
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://arxiv.org/abs/2101.09855"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="no-underline hover:text-foreground transition-colors"
-                      >
-                        Weak Signal Asymptotics for Sequentially Randomized Experiments
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div className="featured-work-grid mt-5">
+                {featuredWorks.map((work) => (
+                  <a
+                    key={work.title}
+                    href={work.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="featured-work-card"
+                  >
+                    <figure className="featured-work-image">
+                      <img src={work.image} alt="" loading="lazy" />
+                    </figure>
+                    <div className="featured-work-copy">
+                      <span>{work.publication}</span>
+                      <h3>
+                        {work.title}
+                        <span aria-hidden="true">↗</span>
+                      </h3>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
 
             {/* Banner Image */}
-            <div className="pt-4">
+            <figure className="homepage-banner">
               <img 
                 src="/2401302024_01_29_Stanford011-copy-2-1536x557.jpeg" 
                 alt="Kuang Xu at Stanford" 
-                className="w-full h-auto rounded-md"
+                className="homepage-banner-photo"
               />
-            </div>
+            </figure>
           </div>
         </div>
       </div>

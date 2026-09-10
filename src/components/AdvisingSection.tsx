@@ -1,6 +1,6 @@
 const AdvisingSection = () => {
   return (
-    <section id="advising" className="section-spacing section-padding">
+    <section id="research-team" className="section-spacing section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left spacer to match HeroSection layout */}
@@ -9,7 +9,7 @@ const AdvisingSection = () => {
           {/* Right column content - matches Research page main content width */}
           <div className="flex-1 space-y-6">
             <div className="text-left mb-10">
-              <h2 className="text-heading mb-6">Advising</h2>
+              <h2 className="text-heading mb-6">Research Team</h2>
             </div>
             
             <div className="space-y-12">
@@ -20,6 +20,9 @@ const AdvisingSection = () => {
                 
                 <div className="space-y-4 text-body text-muted-foreground">
                   <ul className="space-y-3">
+                    <li>
+                      <a href="https://www.gsb.stanford.edu/programs/phd/academic-experience/students/lin-franklin-feng" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Lin (Franklin) Feng</a>, PhD Student, Operations, Information &amp; Technology, Stanford GSB
+                    </li>
                     <li>
                       <a href="https://www.linkedin.com/in/chao-qin-b954228b/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Chao Qin</a>, Postdoc, GSB, Stanford University (co-advisor: Guido Imbens, Stefan Wager)
                     </li>
