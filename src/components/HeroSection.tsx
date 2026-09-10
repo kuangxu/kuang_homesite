@@ -12,6 +12,13 @@ const featuredWorks = [
     image: '/highlights/long-term-reliability-figure.jpg',
   },
   {
+    title: 'Uber Consumer AI',
+    publication: 'Real-world deployment · Uber, 2026',
+    href: 'https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant',
+    image: '/highlights/uber-consumer-ai.webp',
+    cover: true,
+  },
+  {
     title: 'Behavioral Generative Agents for Energy Operations',
     publication: 'Preprint · 2025',
     href: 'https://arxiv.org/abs/2506.12664',
@@ -47,12 +54,6 @@ const featuredWorks = [
     href: 'https://arxiv.org/abs/2608.12841',
     image: '/highlights/aqua-figure.png',
   },
-  {
-    title: 'Weak Signal Asymptotics for Sequentially Randomized Experiments',
-    publication: 'Management Science · 2024',
-    href: 'https://arxiv.org/abs/2101.09855',
-    image: '/highlights/weak-signals-figure.png',
-  },
 ];
 
 const HeroSectionKuang = () => {
@@ -62,7 +63,7 @@ const HeroSectionKuang = () => {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-20 items-start">
           {/* Left Column - Photo and Links */}
           <aside className="w-full lg:w-72 xl:w-80 flex-shrink-0 lg:sticky lg:top-32">
-            <div className="fade-in w-full max-w-[18rem] mb-7">
+            <div className="fade-in w-full max-w-[18rem] mx-auto mb-7">
               <img 
                 src="/headshot-scaled-q5iexjyiglr7fc4g6hbsyiebegkr6unkecvr0hlp5s-2.jpg" 
                 alt="Kuang Xu" 
@@ -71,7 +72,7 @@ const HeroSectionKuang = () => {
             </div>
             
             {/* Contact Links */}
-            <div className="space-y-3 text-base">
+            <div className="w-full max-w-[18rem] mx-auto space-y-3 text-base">
               <a 
                 href="https://www.linkedin.com/in/kuangxu/" 
                 target="_blank" 
@@ -106,17 +107,6 @@ const HeroSectionKuang = () => {
                 Google Scholar
               </a>
               <a 
-                href="https://www.youtube.com/@profkuang" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-                YouTube
-              </a>
-              <a 
                 href="mailto:kuangxu@stanford.edu"
                 className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -137,19 +127,6 @@ const HeroSectionKuang = () => {
                 </svg>
                 Substack Newsletter
               </a>
-              <div className="pt-2 space-y-1 text-muted-foreground">
-                <div className="flex items-start gap-2">
-                  <svg className="w-4 h-4 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
-                  <div className="text-base">
-                    Knight Management Center<br/>
-                    655 Knight Way<br/>
-                    Stanford, CA 94305-5015
-                  </div>
-                </div>
-              </div>
               <a 
                 href="https://www.gsb.stanford.edu/faculty-research/faculty/kuang-xu" 
                 target="_blank" 
@@ -167,7 +144,7 @@ const HeroSectionKuang = () => {
                 href="https://www.gsb.stanford.edu/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-48 max-w-[75%] pt-5"
+                className="block w-48 max-w-full pt-6 mx-auto"
                 aria-label="Stanford Graduate School of Business"
               >
                 <img
@@ -182,35 +159,50 @@ const HeroSectionKuang = () => {
           {/* Right Column - Bio */}
           <div className="flex-1 space-y-6 fade-in">
             <p className="text-body text-muted-foreground">
-              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business. His
-              research develops cutting-edge AI and decision technologies for complex physical and economic systems, with
-              applications spanning agentic AI, marketplaces, scientific discovery, and advanced R&amp;D and manufacturing.
-              His recent research focuses on building foundation models and world models for macroscopic physical and
-              economic systems, with applications to AI-powered advanced engineering systems and AI supply chains.
-              Professor Xu previously
-              served as a Senior Staff Scientist at Uber, where he led work on agentic system design, machine learning,
-              and causal inference. He has also served as Chief AI and Data Science Advisor to Shipt Inc., Senior Advisor
-              to Uber Inc., and advisor to a number of startups.
+              Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business and, by
+              courtesy, an Associate Professor of Electrical Engineering at Stanford University.{" "}
+              <strong className="font-semibold text-foreground">
+                His research group focuses on developing advanced AI and world models for physical reality, spanning marketplaces, logistics,
+                healthcare, advanced manufacturing, and scientific discovery.
+              </strong>
             </p>
 
             <p className="text-body text-muted-foreground">
-              Professor Xu’s work has appeared in leading scientific journals, including <em>Operations Research</em>,{" "}
-              <em>Management Science</em>, and the <em>American Economic Review</em>. He has received major honors from
-              INFORMS and ACM SIGMETRICS, including First Place in the INFORMS George E. Nicholson Student Paper
-              Competition, the ACM SIGMETRICS Best Paper Award, and the ACM SIGMETRICS Rising Star Research Award. He
-              has served as an Associate Editor for <em>Management Science</em> and <em>Operations Research</em>. Professor
-              Xu also created{" "}
+              Professor Xu was a Senior Staff Scientist at <strong className="font-semibold text-foreground">Uber</strong>, where he led the creation and deployment of{" "}
+              one of Uber’s first{" "}
+              <a
+                href="https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground hover:text-muted-foreground transition-colors"
+              >
+                consumer agentic AI
+              </a>
+              {" "}systems. His industry roles also include Chief AI Advisor to{" "}
+              <strong className="font-semibold text-foreground">Shipt</strong>, a Target subsidiary, and advisor to multiple AI and deep-tech startups.
+            </p>
+
+            <p className="text-body text-muted-foreground">
+              Professor Xu’s research has appeared in leading journals including{" "}
+              <strong className="font-semibold text-foreground">Operations Research, Management Science,</strong> and the{" "}
+              <strong className="font-semibold text-foreground">American Economic Review</strong>, and he has served as an
+              Associate Editor for both Management Science and Operations Research. He launched{" "}
               <a
                 href="http://aistanford.org"
                 target="_blank"
-                rel="noopener"
-                className="underline hover:text-foreground transition-colors"
+                rel="noopener noreferrer"
+                className="font-semibold text-foreground hover:text-muted-foreground transition-colors"
               >
-                <em>AI and Data Science Strategy</em>
+                AI Strategy
               </a>
-              , Stanford’s first course focused on AI and data science strategy, management, and entrepreneurship. He
-              received his Ph.D. in Electrical Engineering and Computer Science from MIT and his B.S. from the University
-              of Illinois at Urbana-Champaign. Professor Xu is a native of Suzhou, China.
+              , Stanford’s first course on building and leading AI-native products and organizations. His honors include
+              the INFORMS Nicholson Prize, the ACM SIGMETRICS Best Paper Award, and the ACM SIGMETRICS Rising Star
+              Research Award.
+            </p>
+
+            <p className="text-body text-muted-foreground">
+              Professor Xu received his Ph.D. in EECS from MIT and his B.S. in EE from the University of Illinois at
+              Urbana-Champaign. Professor Xu is a native of Suzhou, China.
             </p>
 
             {/* Recent work */}
@@ -234,7 +226,7 @@ const HeroSectionKuang = () => {
                     rel="noopener noreferrer"
                     className="featured-work-card"
                   >
-                    <figure className="featured-work-image">
+                    <figure className={`featured-work-image${work.cover ? ' featured-work-image--cover' : ''}`}>
                       <img src={work.image} alt="" loading="lazy" />
                     </figure>
                     <div className="featured-work-copy">

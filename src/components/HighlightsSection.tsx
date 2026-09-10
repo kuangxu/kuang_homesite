@@ -9,6 +9,29 @@ type Highlight = {
 
 const highlights: Highlight[] = [
   {
+    title: 'Uber Consumer AI',
+    summary: 'A consumer AI agent that turns grocery lists, recipes, and photos into checkout-ready carts using multimodal understanding, real-time availability and pricing, and customers’ past orders.',
+    publication: 'Real-world deployment · Uber, 2026',
+    href: 'https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant',
+    image: '/highlights/uber-consumer-ai.webp',
+  },
+  {
+    title: 'Target’s Last-Mile Delivery System',
+    summary: 'The core batching and routing algorithm, designed by Professor Xu, helps power Target’s sortation-center network for faster local delivery, lower costs, and greater last-mile capacity.',
+    publication: 'Real-world deployment · Target and Shipt, 2023',
+    href: 'https://corporate.target.com/news-features/article/2023/02/sortation-centers',
+    image: '/highlights/target-last-mile.png',
+    figure: true,
+  },
+  {
+    title: 'Freight Pricing with a Controlled Markov Decision Process',
+    summary: 'A dynamic pricing system computes sequences of upfront prices for tens of thousands of freight loads each day, balancing booking speed, operating costs, and service reliability.',
+    publication: 'Real-world deployment · Uber Freight, 2021',
+    href: 'https://www.uber.com/us/en/blog/freight-markov/',
+    image: '/highlights/uber-freight-pricing.png',
+    figure: true,
+  },
+  {
     title: 'Agentic Laboratories of the Future',
     summary: 'A proposed architecture for scientific discovery organized around laboratory world models that coordinate human judgment, AI reasoning, experimental evidence, and physical execution.',
     publication: 'Preprint, 2026',
@@ -137,16 +160,44 @@ const highlights: Highlight[] = [
   },
 ];
 
+const highlightYear = (highlight: Highlight) =>
+  Number(highlight.publication.match(/\b(?:19|20)\d{2}\b/)?.[0] ?? 0);
+
+const orderedHighlights = [...highlights].sort((a, b) => {
+  const aIsDeployment = a.publication.startsWith('Real-world deployment');
+  const bIsDeployment = b.publication.startsWith('Real-world deployment');
+  const aRank = highlightYear(a) + (aIsDeployment ? 0.5 : 0);
+  const bRank = highlightYear(b) + (bIsDeployment ? 0.5 : 0);
+
+  return bRank - aRank;
+});
+
+const uberHighlightIndex = orderedHighlights.findIndex(({ title }) => title === 'Uber Consumer AI');
+const reliabilityHighlightIndex = orderedHighlights.findIndex(
+  ({ title }) => title === 'What Is the Long-Term Value of Reliability?',
+);
+
+if (uberHighlightIndex !== -1 && reliabilityHighlightIndex !== -1) {
+  const [uberHighlight] = orderedHighlights.splice(uberHighlightIndex, 1);
+  const updatedReliabilityIndex = orderedHighlights.findIndex(
+    ({ title }) => title === 'What Is the Long-Term Value of Reliability?',
+  );
+  orderedHighlights.splice(updatedReliabilityIndex + 1, 0, uberHighlight);
+}
+
 const HighlightsSection = () => {
   return (
     <section id="highlights" className="section-spacing section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="text-left mb-10 md:mb-12">
           <h1 className="text-heading">Highlights</h1>
+          <p className="mt-4 max-w-3xl text-xl leading-relaxed text-foreground md:text-2xl">
+            Selected projects developed by my research team.
+          </p>
         </div>
 
         <div className="highlights-grid">
-          {highlights.map((highlight) => (
+          {orderedHighlights.map((highlight) => (
             <a
               key={highlight.title}
               href={highlight.href}
@@ -155,7 +206,7 @@ const HighlightsSection = () => {
               className="highlight-card"
             >
               <figure className={`highlight-image${highlight.figure ? ' highlight-image--figure' : ''}`}>
-                <img src={highlight.image} alt={`Paper image for ${highlight.title}`} loading="lazy" />
+                <img src={highlight.image} alt={`Image for ${highlight.title}`} loading="lazy" />
               </figure>
               <div className="highlight-copy">
                 <span className="highlight-publication">{highlight.publication}</span>

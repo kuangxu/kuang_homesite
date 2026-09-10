@@ -86,20 +86,20 @@ const NavigationKuang = () => {
       }`}>
         <div className="section-padding">
           <div className="max-w-7xl mx-auto">
-            <div className="flex justify-between items-end py-4">
+            <div className="flex justify-between items-end gap-14 py-6 md:py-7">
               <Link 
                 to="/"
                 onClick={(e) => handleNavClick(e, '/')}
                 className="btn-clean flex min-w-0 flex-col"
               >
                 <span className="text-display text-3xl md:text-4xl">Kuang Xu</span>
-                <span className="mt-0.5 block max-w-[calc(100vw-7rem)] truncate text-left text-sm font-normal normal-case tracking-normal text-muted-foreground md:max-w-none md:text-base">
+                <span className="mt-1 block max-w-[calc(100vw-7rem)] truncate text-left text-sm font-normal normal-case tracking-normal text-muted-foreground md:max-w-none md:text-base">
                   Associate Professor, Stanford Graduate School of Business
                 </span>
               </Link>
 
               {/* Navigation Links */}
-              <div className="hidden xl:flex space-x-6 pb-1">
+              <div className="hidden xl:flex gap-6 pb-1">
               <Link 
                 to="/"
                 onClick={(e) => handleNavClick(e, '/', 'hero')}
