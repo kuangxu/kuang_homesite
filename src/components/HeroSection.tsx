@@ -162,7 +162,7 @@ const HeroSectionKuang = () => {
               Kuang Xu (Chinese: 许匡) is a Tenured Associate Professor at Stanford Graduate School of Business and, by
               courtesy, an Associate Professor of Electrical Engineering at Stanford University.{" "}
               <strong className="font-semibold text-foreground">
-                His research group focuses on developing advanced AI and world models for physical reality, spanning marketplaces, logistics,
+                His research group focuses on developing advanced AI and decision systems for physical reality, spanning marketplaces, logistics,
                 healthcare, advanced manufacturing, and scientific discovery.
               </strong>
             </p>
