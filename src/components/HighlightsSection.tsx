@@ -87,14 +87,6 @@ const highlights: Highlight[] = [
     figure: true,
   },
   {
-    title: 'AQuA: Recursively Self-Improving Quantitative Trading Research Agents',
-    summary: 'Two autonomous research systems retain evidence from earlier experiments to improve subsequent factor discovery and model development within carefully controlled quantitative-investment environments.',
-    publication: 'Preprint, 2026',
-    href: 'https://arxiv.org/abs/2608.12841',
-    image: '/highlights/aqua-figure.png',
-    figure: true,
-  },
-  {
     title: 'Weak Signal Asymptotics for Sequentially Randomized Experiments',
     summary: 'A diffusion-limit analysis provides instance-specific views of regret and belief evolution, exposing a tradeoff between near-optimal Thompson sampling and unstable posterior beliefs.',
     publication: 'Management Science, 2024',

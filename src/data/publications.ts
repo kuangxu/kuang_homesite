@@ -2,20 +2,6 @@ import { PublicationEntry, ConferenceEntry, ThesisEntry, MediaEntry, TalkEntry }
 
 export const workingPapers: PublicationEntry[] = [
   {
-    title: "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
-    titleUrl: "https://arxiv.org/abs/2608.12841",
-    coAuthors: [
-      { name: "Jiacheng Guo" },
-      { name: "Suozhi Huang" },
-      { name: "Yunlong Gao" },
-      { name: "Zihao Li" },
-      { name: "Jason Ge" },
-      { name: "Mengdi Wang" }
-    ],
-    status: "working-paper",
-    year: "2026"
-  },
-  {
     title: "Agentic Laboratories of the Future: Towards World Models for Scientific Discovery",
     titleUrl: "https://www.preprints.org/manuscript/202608.0213",
     coAuthors: [

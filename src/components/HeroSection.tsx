@@ -48,12 +48,6 @@ const featuredWorks = [
     href: 'https://pubsonline.informs.org/doi/10.1287/opre.2022.0359',
     image: '/highlights/sparse-communication-figure.jpg',
   },
-  {
-    title: 'AQuA: Recursively Self-Improving Quantitative Trading Research Agents',
-    publication: 'Preprint · 2026',
-    href: 'https://arxiv.org/abs/2608.12841',
-    image: '/highlights/aqua-figure.png',
-  },
 ];
 
 const HeroSectionKuang = () => {
