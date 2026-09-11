@@ -1,54 +1,6 @@
-const featuredWorks = [
-  {
-    title: 'Agentic Laboratories of the Future',
-    publication: 'Preprint · 2026',
-    href: 'https://www.preprints.org/manuscript/202608.0213',
-    image: '/highlights/agentic-labs.svg',
-  },
-  {
-    title: 'What Is the Long-Term Value of Reliability?',
-    publication: 'Preprint · 2026',
-    href: 'https://arxiv.org/abs/2606.11526',
-    image: '/highlights/long-term-reliability-figure.jpg',
-  },
-  {
-    title: 'Uber Consumer AI',
-    publication: 'Real-world deployment · Uber, 2026',
-    href: 'https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant',
-    image: '/highlights/uber-consumer-ai.webp',
-    cover: true,
-  },
-  {
-    title: 'Behavioral Generative Agents for Energy Operations',
-    publication: 'Preprint · 2025',
-    href: 'https://arxiv.org/abs/2506.12664',
-    image: '/highlights/energy-agents-figure.jpg',
-  },
-  {
-    title: 'Experimenting under Stochastic Congestion',
-    publication: 'Management Science · 2026',
-    href: 'https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.08306',
-    image: '/highlights/stochastic-congestion-figure.png',
-  },
-  {
-    title: 'Non-Stationary Bandit Learning via Predictive Sampling',
-    publication: 'Management Science · Forthcoming · 2026',
-    href: 'https://arxiv.org/abs/2205.01970',
-    image: '/highlights/predictive-sampling-figure.jpg',
-  },
-  {
-    title: 'Treatment Effects in Market Equilibrium',
-    publication: 'American Economic Review · 2025',
-    href: 'https://www.aeaweb.org/articles?id=10.1257/aer.20230039',
-    image: '/highlights/market-equilibrium-figure.jpg',
-  },
-  {
-    title: 'Load Balancing Using Sparse Communication',
-    publication: 'Operations Research · 2025',
-    href: 'https://pubsonline.informs.org/doi/10.1287/opre.2022.0359',
-    image: '/highlights/sparse-communication-figure.jpg',
-  },
-];
+import { orderedHighlights } from '../data/highlights';
+
+const recentWorks = orderedHighlights.slice(0, 9);
 
 const HeroSectionKuang = () => {
   return (
@@ -211,7 +163,7 @@ const HeroSectionKuang = () => {
               </div>
 
               <div className="featured-work-grid mt-5">
-                {featuredWorks.map((work) => (
+                {recentWorks.map((work) => (
                   <a
                     key={work.title}
                     href={work.href}
@@ -219,7 +171,7 @@ const HeroSectionKuang = () => {
                     rel="noopener noreferrer"
                     className="featured-work-card"
                   >
-                    <figure className={`featured-work-image${work.cover ? ' featured-work-image--cover' : ''}`}>
+                    <figure className={`featured-work-image${work.figure ? '' : ' featured-work-image--cover'}`}>
                       <img src={work.image} alt="" loading="lazy" />
                     </figure>
                     <div className="featured-work-copy">
