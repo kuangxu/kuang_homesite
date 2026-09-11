@@ -26,13 +26,13 @@ const featuredWorks = [
   },
   {
     title: 'Experimenting under Stochastic Congestion',
-    publication: 'Preprint · 2026',
-    href: 'https://arxiv.org/abs/2302.12093',
+    publication: 'Management Science · 2026',
+    href: 'https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.08306',
     image: '/highlights/stochastic-congestion-figure.png',
   },
   {
     title: 'Non-Stationary Bandit Learning via Predictive Sampling',
-    publication: 'Preprint · 2026',
+    publication: 'Management Science · Forthcoming · 2026',
     href: 'https://arxiv.org/abs/2205.01970',
     image: '/highlights/predictive-sampling-figure.jpg',
   },
@@ -144,7 +144,7 @@ const HeroSectionKuang = () => {
                 href="https://www.gsb.stanford.edu/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-48 max-w-full pt-6 mx-auto"
+                className="block w-52 max-w-full pt-6 mx-auto"
                 aria-label="Stanford Graduate School of Business"
               >
                 <img

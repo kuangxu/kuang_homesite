@@ -88,13 +88,12 @@ export const journalPublications: PublicationEntry[] = [
   },
   {
     title: "Experimenting under Stochastic Congestion",
-    titleUrl: "https://arxiv.org/abs/2302.12093",
+    titleUrl: "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.08306",
     coAuthors: [
       { name: "Shuangning Li", url: "https://lsn235711.github.io/" },
       { name: "Ramesh Johari", url: "https://web.stanford.edu/~rjohari/" },
       { name: "Stefan Wager", url: "https://web.stanford.edu/~swager/" }
     ],
-    status: "forthcoming",
     journal: "Management Science",
     year: "2026"
   },

@@ -57,15 +57,15 @@ const highlights: Highlight[] = [
   {
     title: 'Experimenting under Stochastic Congestion',
     summary: 'Queueing-aware estimators address interference among waiting customers, improving switchback experiments and recovering system-wide policy effects from unit-level randomization.',
-    publication: 'Preprint, 2026',
-    href: 'https://arxiv.org/abs/2302.12093',
+    publication: 'Management Science, 2026',
+    href: 'https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2024.08306',
     image: '/highlights/stochastic-congestion-figure.png',
     figure: true,
   },
   {
     title: 'Non-Stationary Bandit Learning via Predictive Sampling',
     summary: 'Predictive sampling favors information that will remain useful as an environment changes, with regret guarantees and stronger performance than Thompson sampling across studied non-stationary settings.',
-    publication: 'Preprint, 2026',
+    publication: 'Management Science, forthcoming, 2026',
     href: 'https://arxiv.org/abs/2205.01970',
     image: '/highlights/predictive-sampling-figure.jpg',
     figure: true,

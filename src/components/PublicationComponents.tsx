@@ -94,13 +94,14 @@ export const PublicationList = ({ publications }: PublicationListProps) => (
           {pub.journal && (
             <>
               <em>{pub.journal}</em>
+              {pub.status === 'forthcoming' && ', forthcoming'}
               {pub.year && `, ${pub.year}`}
               {pub.volume && `, ${pub.volume}`}
               {pub.pages && `, ${pub.pages}`}
             </>
           )}
           
-          {pub.status && (
+          {pub.status && pub.status !== 'forthcoming' && (
             <>
               {pub.journal && ' | '}
               Preprint
