@@ -168,30 +168,30 @@ const HeroSectionKuang = () => {
             </p>
 
             <p className="text-body text-muted-foreground">
-              Professor Xu was a Senior Staff Scientist at <strong className="font-semibold text-foreground">Uber</strong>, where he led the creation and deployment of{" "}
+              Professor Xu was a Senior Staff Scientist at <em>Uber</em>, where he led the creation and deployment of{" "}
               one of Uber’s first{" "}
               <a
                 href="https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-foreground hover:text-muted-foreground transition-colors"
+                className="italic text-foreground hover:text-muted-foreground transition-colors"
               >
                 consumer agentic AI
               </a>
               {" "}systems. His industry roles also include Chief AI Advisor to{" "}
-              <strong className="font-semibold text-foreground">Shipt</strong>, a Target subsidiary, and advisor to multiple AI and deep-tech startups.
+              <em>Shipt</em>, a Target subsidiary, and advisor to multiple AI and deep-tech startups.
             </p>
 
             <p className="text-body text-muted-foreground">
               Professor Xu’s research has appeared in leading journals including{" "}
-              <strong className="font-semibold text-foreground">Operations Research, Management Science,</strong> and the{" "}
-              <strong className="font-semibold text-foreground">American Economic Review</strong>, and he has served as an
+              <em>Operations Research, Management Science,</em> and the{" "}
+              <em>American Economic Review</em>, and he has served as an
               Associate Editor for both Management Science and Operations Research. He launched{" "}
               <a
                 href="http://aistanford.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-foreground hover:text-muted-foreground transition-colors"
+                className="italic text-foreground hover:text-muted-foreground transition-colors"
               >
                 AI Strategy
               </a>
