@@ -119,7 +119,7 @@ const HeroSectionKuang = () => {
                 href="https://www.axios.com/2026/02/11/uber-eats-ai-grocery-cart-assistant"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="italic text-foreground hover:text-muted-foreground transition-colors"
+                className="text-foreground hover:text-muted-foreground transition-colors"
               >
                 consumer agentic AI
               </a>

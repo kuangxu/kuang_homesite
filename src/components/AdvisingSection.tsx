@@ -21,13 +21,19 @@ const AdvisingSection = () => {
                 <div className="space-y-4 text-body text-muted-foreground">
                   <ul className="space-y-3">
                     <li>
-                      <a href="https://www.gsb.stanford.edu/programs/phd/academic-experience/students/lin-franklin-feng" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Lin (Franklin) Feng</a>, PhD Student, Operations, Information &amp; Technology, Stanford GSB
+                      <a href="https://www.gsb.stanford.edu/programs/phd/academic-experience/students/lin-franklin-feng" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Lin (Franklin) Feng</a>, PhD Student, Operations, Information &amp; Technology, Stanford GSB (co-advisor: <a href="https://www.gsb.stanford.edu/faculty-research/faculty/yue-hu" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">Yue Hu</a>)
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/chao-qin-b954228b/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Chao Qin</a>, Postdoc, GSB, Stanford University (co-advisor: Guido Imbens, Stefan Wager)
+                      <a href="https://people.miami.edu/profile/4606643b2b050183b0b810c5b5731832" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Chao Qin</a>, Postdoc, GSB, Stanford University (co-advisors: Guido Imbens, Stefan Wager)
+                      <ul className="ml-6 mt-1">
+                        <li>First position: Assistant Professor, University of Miami</li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="https://congchenhappy.github.io/-/index.html" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Cong Chen</a>, Postdoc, GSB & Stanford Energy Fellowship, Stanford University (co-advisor: Itai Ashlagi, Omer Karaduman)
+                      <a href="https://engineering.dartmouth.edu/community/faculty/cong-chen" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Cong Chen</a>, Postdoc, GSB &amp; Stanford Energy Fellowship, Stanford University (co-advisors: Itai Ashlagi, Omer Karaduman)
+                      <ul className="ml-6 mt-1">
+                        <li>First position: Assistant Professor, Dartmouth College</li>
+                      </ul>
                     </li>
                     <li>
                       <a href="https://www.gsb.stanford.edu/programs/phd/academic-experience/students/margaret-redfield" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Margaret Redfield</a>, MS, GSB, Stanford University (co-advisor: Omer Karaduman)
@@ -66,7 +72,7 @@ const AdvisingSection = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="http://www.mit.edu/~zhixu/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:underline">Zhi Xu</a>, MS, Massachusetts Institute of Technology (co-advisor: John N. Tsitsiklis)
+                      <span className="font-semibold text-foreground">Zhi Xu</span>, MS, Massachusetts Institute of Technology (co-advisor: John N. Tsitsiklis)
                       <br/>
                       Masters thesis: <a href="https://dspace.mit.edu/handle/1721.1/112054" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">Private sequential search and optimization</a>
                       <ul className="ml-6 mt-1">
