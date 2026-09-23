@@ -1,58 +1,37 @@
-# Kuang Xu - Academic Homepage
+# Kuang Xu — Academic Homepage
 
-## Project Overview
+A lightweight, multi-page static website for Kuang Xu, Associate Professor at Stanford Graduate School of Business.
 
-A modern, minimalist website for Kuang Xu - Associate Professor at Stanford Graduate School of Business.
+## Architecture
 
-## Technologies Used
+The published site uses plain HTML, CSS, and a small vanilla JavaScript file. There is no client-side framework, component runtime, or SPA router.
 
-This project is built with:
+- `index.html` — home and biography
+- `highlights.html` — selected projects
+- `research.html` — publications and talks
+- `team.html` — research team and teaching
+- `advisory.html` — leadership workshops and strategic advisory
+- `styles.css` — site layout and content styles
+- `static.css` — navigation, page transitions, and responsive overrides
+- `script.js` — mobile navigation, reveal effects, and the homepage pixel field
+- `public/` — images, domain configuration, robots file, and 404 page
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Vite is used only as a static build and local preview tool. It does not provide a frontend runtime.
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-### Development Setup
+## Development
 
 ```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory
-cd kuang-homepage
-
-# Step 3: Install dependencies
 npm install
-
-# Step 4: Start the development server
 npm run dev
 ```
 
-The development server will start at `http://localhost:8080/`
+The development server starts at `http://localhost:8080/`.
 
-## Project Structure
+## Production build
 
-- `src/components/` - React components
-- `src/pages/` - Page-level components
-- `src/index.css` - Global styles and design system
-- `src/lib/` - Utility functions
+```sh
+npm run build
+npm run preview
+```
 
-## Design System
-
-This project uses a minimalist design system with:
-- Clean typography with Inter font
-- Monochromatic color palette
-- Responsive layout with mobile-first approach
-- Consistent spacing and component patterns
-
-## Deployment
-
-The project can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
+The build emits the five HTML pages and shared static assets to `dist/`. Pushes to `main` are deployed to GitHub Pages by the existing workflow.
